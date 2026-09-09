@@ -49,13 +49,32 @@ def _p(alineas):
     return "\n".join(f'          <p>{D._tekens(a)}</p>' for a in alineas)
 
 
+# De drie categorieën waaruit de homepage één project laat zien, in deze
+# volgorde. Funderingsherstel eerst: dat is waar Duyts om gevraagd wordt.
+UITGELICHT = ('Funderingsherstel', 'Verbouwing', 'Nieuwbouw')
+
+
 def _projectrijen(maximaal=3):
     rijen = []
-    gekozen = (D.projecten_in('Funderingsherstel', 1)
-               + D.projecten_in('Verbouwing', 1)
-               + D.projecten_in('Nieuwbouw', 1))[:maximaal]
-    for i, p in enumerate(gekozen):
-        cat = p['categorieen'][0]
+    # Eén project per categorie, maar wel drie verschillende. Een project kan
+    # onder meer dan één categorie vallen: Artis valt onder alle drie en staat
+    # vooraan in de lijst, dus `projecten_in(cat, 1)` gaf hem drie keer terug en
+    # stond hij drie keer op de homepage. Daarom per categorie doorzoeken tot er
+    # een project is dat er nog niet bij staat.
+    gekozen = []
+    gebruikt = set()
+    for cat in UITGELICHT:
+        for kandidaat in D.projecten_in(cat):
+            if kandidaat['bestand'] in gebruikt:
+                continue
+            gekozen.append((cat, kandidaat))
+            gebruikt.add(kandidaat['bestand'])
+            break
+    gekozen = gekozen[:maximaal]
+    # De categorie die erbij staat is die waarvoor het project gekozen is, en
+    # niet zijn eerste categorie: een project dat hier de Verbouwing vult moet
+    # niet "Nieuwbouw" als label krijgen.
+    for i, (cat, p) in enumerate(gekozen):
         meta = "".join(f'<span class="cases-grid__meta-item">{m}</span>'
                        for m in [cat] + ([p['plaats']] if p['plaats'] else []))
         rijen.append(f'''      <a class="cases-grid__row {'cases-grid__row--grey' if i % 2 == 0 else 'cases-grid__row--white'} hover--icon"
