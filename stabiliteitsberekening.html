@@ -24,15 +24,15 @@
 <link rel="preload" href="assets/fonts/assistant-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-<link rel="stylesheet" href="styleguide.css?v=424acdcc" />
-<link rel="stylesheet" href="transitions.css?v=af37e0f4" />
+<link rel="stylesheet" href="styleguide.min.css?v=0c69cec1" />
+<style>[data-barba=wrapper]{position:relative}.app__wrapper{background-color:var(--color-background, #FFFFFF);color:var(--color-text-primary, #383838);min-height:100svh;display:flex;flex-direction:column}.content__wrapper{position:relative;width:100%;min-height:100svh;flex:1 0 auto;display:flex;flex-direction:column}[data-barba=container]+[data-barba=container]{position:fixed;inset:0;z-index:3;overflow:hidden}.is__transitioning a{pointer-events:none}@media(prefers-reduced-motion:reduce){.is__transitioning *{scroll-behavior:auto!important}}</style>
 <!-- De cookiebalk verschijnt pas als cookiebalk.js hem opbouwt, dus zijn stijl
      hoeft de eerste weergave niet op te houden. media="print" laat de browser
      hem buiten het kritieke pad ophalen; onload zet hem daarna alsnog aan. De
      noscript-regel vangt op dat zonder JavaScript ook die onload niet afgaat. -->
-<link rel="stylesheet" href="cookiebalk.css?v=16254147" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="cookiebalk.css?v=16254147" /></noscript>
-<link rel="stylesheet" href="service.css?v=e4706cbf" data-page-css="service" />
+<link rel="stylesheet" href="cookiebalk.min.css?v=c957edcd" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="cookiebalk.min.css?v=c957edcd" /></noscript>
+<style data-page-css="service">.hero--actions{margin-top:var(--space-700);display:flex;flex-wrap:wrap;gap:var(--space-300)}.trap{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}.trede{display:flex;gap:var(--space-500);padding:var(--space-panel) var(--inset-x);background-color:var(--color-white);margin-left:calc(var(--trede) * 6%);border-left:4px solid var(--color-geel)}.trede:nth-child(2n){background-color:var(--color-grey)}@media(max-width:991px){.trede{margin-left:0;padding:var(--space-panel-md) var(--inset-x)}}@media(max-width:576px){.trede{flex-direction:column;gap:var(--space-300);padding:var(--space-panel-sm) var(--inset-x)}}.trede__nummer{flex-shrink:0;font-family:var(--font-light);font-weight:var(--weight-light);font-size:2rem;line-height:1;color:var(--color-text-primary)}.trede__inhoud{display:flex;flex-direction:column;gap:var(--space-300)}.trede__titel{font-size:clamp(1.25rem,1rem + 1vw,2rem);line-height:1.1}.trede__tekst{font-family:var(--font-regular);font-weight:var(--weight-regular);font-size:1rem;line-height:1.5;margin:0}.trede__gedrag{font-family:var(--font-regular);font-weight:var(--weight-regular);font-size:.875rem;line-height:1.5;margin:0}.trede__gedrag span{display:block;margin-bottom:var(--space-100);font-family:var(--font-medium);font-weight:var(--weight-medium);font-size:.6875rem;letter-spacing:var(--tracking-label);text-transform:uppercase}.voordeel__icoon{fill:var(--color-text-primary);width:24px;height:24px}.voordeel__titel{font-size:1.5rem;line-height:1.1}.projectkaart__klant{font-family:var(--font-medium);font-weight:var(--weight-medium);font-size:.6875rem;letter-spacing:var(--tracking-label);text-transform:uppercase;margin:0}</style>
 
 <link rel="icon" href="assets/favicon/duyts-favicon.ico" sizes="16x16 32x32 48x48" />
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/duyts-favicon-32.png" />
@@ -144,8 +144,8 @@
 <header class="header header--scrolled" id="siteHeader">
   <div class="header--container">
     <a href="index.html" class="header--logo" aria-label="Duyts Bouwconstructies, naar de homepage">
-      <img class="header--logo-kleur" src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40">
-      <img class="header--logo-wit" src="assets/logo/duyts-logo-wit.png" alt="" aria-hidden="true" width="112" height="40">
+      <img class="header--logo-kleur" src="assets/logo/duyts-logo.webp" alt="Duyts Bouwconstructies" width="112" height="40">
+      <img class="header--logo-wit" src="assets/logo/duyts-logo-wit.webp" alt="" aria-hidden="true" width="112" height="40">
     </a>
 
     <nav class="submenu" aria-label="Hoofdmenu">
@@ -179,7 +179,7 @@
         </ul>
       </div>
       <div class="uitklap__kaart">
-        <picture><img src="assets/foto/duyts-dienst-constructieberekening-1100.webp" srcset="assets/foto/duyts-dienst-constructieberekening-640.webp 640w, assets/foto/duyts-dienst-constructieberekening-1100.webp 1100w" sizes="(max-width: 1199px) 0px, 40vw" width="1100" height="500" alt="" loading="lazy" decoding="async"></picture>
+        <picture><img src="assets/foto/duyts-dienst-constructieberekening-1100.webp" srcset="assets/foto/duyts-dienst-constructieberekening-640.webp 640w, assets/foto/duyts-dienst-constructieberekening-1100.webp 1100w" sizes="(max-width: 1199px) 0px, 40vw" width="1100" height="500" alt="" loading="lazy" fetchpriority="low" decoding="async"></picture>
         <span class="uitklap__sluier" aria-hidden="true"></span>
         <div class="uitklap__kaart-tekst">
           <p class="uitklap__kaart-kop">Weten wat uw project nodig heeft?</p>
@@ -201,7 +201,7 @@
         </ul>
       </div>
       <div class="uitklap__kaart">
-        <picture><img src="assets/foto/duyts-project-kloveniersburgwal-1440.webp" srcset="assets/foto/duyts-project-kloveniersburgwal-480.webp 480w, assets/foto/duyts-project-kloveniersburgwal-800.webp 800w, assets/foto/duyts-project-kloveniersburgwal-1200.webp 1200w, assets/foto/duyts-project-kloveniersburgwal-1440.webp 1440w" sizes="(max-width: 1199px) 0px, 40vw" width="1440" height="2560" alt="" loading="lazy" decoding="async"></picture>
+        <picture><img src="assets/foto/duyts-project-kloveniersburgwal-1440.webp" srcset="assets/foto/duyts-project-kloveniersburgwal-480.webp 480w, assets/foto/duyts-project-kloveniersburgwal-800.webp 800w, assets/foto/duyts-project-kloveniersburgwal-1200.webp 1200w, assets/foto/duyts-project-kloveniersburgwal-1440.webp 1440w" sizes="(max-width: 1199px) 0px, 40vw" width="1440" height="2560" alt="" loading="lazy" fetchpriority="low" decoding="async"></picture>
         <span class="uitklap__sluier" aria-hidden="true"></span>
         <div class="uitklap__kaart-tekst">
           <p class="uitklap__kaart-kop">Van monument tot nieuwbouw</p>
@@ -627,34 +627,34 @@
     <div class="logo-slider__venster">
       <div class="logo-slider__spoor">
         <ul class="logo-slider__set">
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="Alstom" width="408" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="Ballast Nedam" width="452" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="Bilfinger" width="210" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="Cosun Beet Company" width="345" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="Ebert Hera" width="389" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="Electrabel" width="203" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="Freesmij" width="309" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="GE Vernova" width="362" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="Huhtamaki" width="478" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="Ivens" width="237" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="Ooms Bouw &amp; Ontwikkeling" width="248" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="Stork" width="197" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="TES Industrial Systems" width="160" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="Alstom" width="408" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="Ballast Nedam" width="452" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="Bilfinger" width="210" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="Cosun Beet Company" width="345" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="Ebert Hera" width="389" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="Electrabel" width="203" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="Freesmij" width="309" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="GE Vernova" width="362" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="Huhtamaki" width="478" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="Ivens" width="237" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="Ooms Bouw &amp; Ontwikkeling" width="248" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="Stork" width="197" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="TES Industrial Systems" width="160" height="80" fetchpriority="low" decoding="async"></li>
         </ul>
         <ul class="logo-slider__set" aria-hidden="true">
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="" width="408" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="" width="452" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="" width="210" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="" width="345" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="" width="389" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="" width="203" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="" width="309" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="" width="362" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="" width="478" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="" width="237" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="" width="248" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="" width="197" height="80" decoding="async"></li>
-          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="" width="160" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="" width="408" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="" width="452" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="" width="210" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="" width="345" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="" width="389" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="" width="203" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="" width="309" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="" width="362" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="" width="478" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="" width="237" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="" width="248" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="" width="197" height="80" fetchpriority="low" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="" width="160" height="80" fetchpriority="low" decoding="async"></li>
         </ul>
       </div>
     </div>
@@ -681,11 +681,11 @@
     <div class="footer--widgets">
       <div class="row footer--gap">
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <img src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40" style="margin-bottom:var(--space-500)">
+          <img src="assets/logo/duyts-logo.webp" alt="Duyts Bouwconstructies" width="112" height="40" style="margin-bottom:var(--space-500)">
           <p class="footer--intro">Constructieve adviezen voor verbouwing, funderingsherstel en nieuwbouw. Sinds 1981 vanuit Amsterdam, door het hele land.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <h4>Werkzaamheden</h4>
+          <h2 class="footer__kop">Werkzaamheden</h2>
           <ul role="list">
             <li><a href="verbouwing.html">Verbouwing</a></li>
             <li><a href="fundering.html">Fundering</a></li>
@@ -697,7 +697,7 @@
           </ul>
         </div>
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <h4>Projecten</h4>
+          <h2 class="footer__kop">Projecten</h2>
           <ul role="list">
             <li><a href="projecten.html#funderingsherstel">Funderingsherstel</a></li>
             <li><a href="projecten.html#nieuwbouw">Nieuwbouw</a></li>
@@ -707,7 +707,7 @@
           </ul>
         </div>
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <h4>Contact</h4>
+          <h2 class="footer__kop">Contact</h2>
           <ul role="list">
             <li><a href="tel:+31206847475">020-6847475</a></li>
             <li><a href="mailto:info@duyts.nl">info@duyts.nl</a></li>
@@ -725,8 +725,8 @@
   </div>
 </footer>
 
-<script src="site.js?v=f105a2ab"></script>
-<script src="contactformulier.js?v=2634c28d"></script>
+<script src="site.min.js?v=3700f944"></script>
+<script src="contactformulier.min.js?v=6a70ab3a"></script>
 
 </div><!-- /.content__wrapper -->
 </div><!-- /[data-barba=container] -->
@@ -789,10 +789,10 @@
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js"></script>
-<script defer src="cookiebalk.js?v=76872ba6"></script>
-<script defer src="analytics.js?v=47e6b63a"></script>
-<script defer src="smooth-scroll.js?v=6b5f0d26"></script>
-<script defer src="page-transitions.js?v=9fe9bce8"></script>
+<script defer src="cookiebalk.min.js?v=eca84725"></script>
+<script defer src="analytics.min.js?v=66593c4a"></script>
+<script defer src="smooth-scroll.min.js?v=1d90f74d"></script>
+<script defer src="page-transitions.min.js?v=9ca3fe1f"></script>
 
 </body>
 </html>

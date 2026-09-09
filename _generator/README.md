@@ -73,6 +73,94 @@ melding in plaats van met halve bestanden.
 De CSS, de JavaScript en alles in `assets/` worden **niet** gegenereerd; die
 bewerk je rechtstreeks.
 
+## Snelheid: wat er gedaan is en waarom
+
+Gemeten met Lighthouse tegen een server die comprimeert en cache-headers stuurt,
+zoals een echte host. Mobiel, mediaan van vijf runs:
+
+| | voor | na |
+|---|---|---|
+| Performance | 77 | **98** |
+| Accessibility | 98 | **100** |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+| First Contentful Paint | 2,6 s | 0,8 s |
+| Largest Contentful Paint | 4,4 s | 2,4 s |
+| Speed Index | 5,2 s | 1,4 s |
+| Total Blocking Time | 40 ms | 0 ms |
+| Layout shift | 0 | 0 |
+
+Desktop staat op 100 / 100 / 100 / 100.
+
+Wat het opleverde, in volgorde van effect:
+
+1. **Minificeren** (`minify.py`). styleguide.css was 116 kB en blokkeerde het
+   tekenen 1661 ms. Geminificeerd 60 kB, met gzip 10,7 kB over de lijn. Alle
+   stylesheets en scripts gaan hierdoor.
+
+2. **Een terugvalletter met dezelfde metriek.** Dit was de verrassing. Met
+   `font-display: swap` tekent de browser de tekst eerst in de systeemletter en
+   daarna opnieuw in Assistant of Karla, en die tweede tekening heeft andere
+   regelafmetingen. Chrome zag dat als een nieuw grootste tekstblok en
+   registreerde de LCP dus op de tweede tekening: 0,5 seconde later en drie
+   punten lager. De twee `@font-face`-blokken bovenaan `styleguide.css` zetten
+   dezelfde systeemletter op maat met `size-adjust` en de ascent/descent-
+   overrides, zodat de wissel geen herschikking meer is. De getallen komen uit
+   de fontbestanden zelf; wordt een font vervangen, dan moeten ze opnieuw
+   berekend worden.
+
+3. **Twee stylesheets in de pagina** in plaats van als los bestand
+   (`transitions.css` en de pagina-stylesheets). Die zijn 0,3 tot 6 kB, en het
+   ophalen kostte per stuk 304 ms aan heen-en-weer. Zie `inline()` in
+   `schil.py`. styleguide.css blijft wél een los bestand: 60 kB in elke pagina
+   zetten is duurder dan het één keer ophalen.
+
+4. **Lage prioriteit voor beeld onder de vouw.** Een lazy afbeelding is niet
+   nodig om te tekenen, dus krijgt hij `fetchpriority="low"`. De browser gaf de
+   ruim twee megabyte beeld op de homepage eerst evenveel bandbreedte als de
+   stylesheet en het lettertype.
+
+5. **De logo's naar lossless WebP.** 42,8 kB aan PNG werd 24 kB, pixel voor
+   pixel identiek (nagerekend met een pixelvergelijking).
+
+6. **De koppen in de voet van h4 naar h2.** Dat was een sprong van twee niveaus
+   na de h2 van het slotblok, op 72 van de 73 pagina's, en de enige fout die
+   Lighthouse op toegankelijkheid gaf.
+
+### Wat bewust NIET is aangeraakt
+
+**De herovideo.** Die moest blijven draaien. Nagemeten met de video geblokkeerd:
+dat scheelt niets in de score en de LCP wordt er zelfs marginaal slechter van,
+dus die beperking kost geen snelheid. De film wordt nog steeds pas door
+`site.js` ingehangen, en niet bij databesparing, een trage lijn of
+`prefers-reduced-motion`.
+
+**De ongebruikte CSS.** Lighthouse meldt dat er op de homepage 32 kB van
+styleguide.css niet gebruikt wordt. Dat is inherent aan één gedeelde
+stylesheet: wat de homepage niet gebruikt, gebruikt een dienstpagina wel.
+Regels weghalen zou andere pagina's breken, en de kritieke CSS eruit halen en de
+rest achteraf laden geeft een pagina die een moment zonder opmaak staat.
+
+**"Properly size images" (-171 kB).** Dat gaat vooral om de twee verborgen
+citaten in de referentieslider. Die zijn 2,8 seconde later in beeld, dus ze
+moeten geladen worden; ze staan al op lage prioriteit.
+
+**"Label in Name".** Deze audit weegt nul en de site voldoet aan het
+onderliggende criterium: de zichtbare tekst zit in de toegankelijke naam
+("Verbouwing" in "Verbouwing: Om de kwaliteit..."). WCAG 2.5.3 vraagt dat de
+zichtbare naam erin zit, niet dat hij er gelijk aan is.
+
+### Meten
+
+```bash
+python3 -m http.server 8080          # of een server die comprimeert
+npx lighthouse http://127.0.0.1:8080/index.html --view
+```
+
+`python3 -m http.server` comprimeert niet en stuurt geen cache-headers, dus
+daar meet je ongeveer vijf punten te laag. Zie `DEPLOY.md`. Reken ook op een
+spreiding van vijf punten tussen runs: neem de mediaan van vijf, niet één run.
+
 ## Versiehash op CSS en JavaScript
 
 Elke lokale stylesheet en elk lokaal script krijgt `?v=<acht tekens>` mee,

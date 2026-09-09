@@ -10,6 +10,13 @@ contentexport van www.duyts.nl), de indeling in de bouwscripts hieronder.
 De afbeeldingen worden hier NIET opnieuw omgezet; dat doet maak_assets.py en dat
 hoeft alleen als er beeld bijkomt of verandert.
 """
+# Eerst minificeren, dan pas de pagina's schrijven. De verwijzingen in de HTML
+# krijgen een hash van het bestand dat de browser ophaalt, en die bestanden
+# moeten er dus al staan; bouw_duyts_home schrijft index.html al bij het
+# importeren, vandaar dat dit hierboven staat en niet onderaan.
+import minify
+minify.main()
+
 import bouw_duyts_home
 import bouw_duyts_dienst
 import bouw_duyts_projecten

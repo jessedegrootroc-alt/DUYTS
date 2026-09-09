@@ -63,6 +63,52 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* Twee fallback-families met de metriek van de merkfonts.
+   ------------------------------------------------------------------
+   Met font-display: swap tekent de browser de tekst eerst in de
+   systeemletter en daarna opnieuw in Assistant of Karla. Die tweede tekening
+   heeft een andere regelbreedte en -hoogte, en Chrome ziet dat als een nieuw
+   grootste tekstblok: de Largest Contentful Paint werd daardoor niet op de
+   eerste tekening geregistreerd maar op de tweede. Gemeten scheelde dat 0,5
+   seconde LCP en drie punten in Lighthouse.
+
+   Deze twee families zijn dezelfde systeemletter, maar op maat gezet zodat een
+   regel exact even breed en even hoog wordt als in het merkfont. De wissel is
+   dan alleen een vormverschil en geen herschikking, dus de LCP blijft op de
+   eerste tekening staan en er komt geen layout shift bij.
+
+   De getallen komen uit de fontbestanden zelf, met fontTools gemeten over een
+   proefreeks van 72 tekens (letters, cijfers en interpunctie in Nederlandse
+   frequentie):
+
+                 gem. breedte   ascent   descent
+     Assistant       0,4574     1,0210    0,2870
+     Karla           0,5179     0,9170    0,2520
+     Arial           0,5411     0,9053    0,2119
+
+   size-adjust is de verhouding van de gemiddelde breedtes; de ascent- en
+   descent-overrides zijn die van het merkfont gedeeld door diezelfde
+   verhouding, want size-adjust schaalt de em mee.
+
+   Wordt een van de twee fonts ooit vervangen, dan moeten deze getallen opnieuw
+   berekend worden, anders komt de layout shift terug. */
+@font-face {
+  font-family: 'Assistant terugval';
+  src: local('Arial');
+  size-adjust: 84.53%;
+  ascent-override: 120.78%;
+  descent-override: 33.95%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Karla terugval';
+  src: local('Arial');
+  size-adjust: 95.71%;
+  ascent-override: 95.81%;
+  descent-override: 26.33%;
+  line-gap-override: 0%;
+}
+
 :root {
   /* ---------- Merklaag: de acht tokens uit brand-style.md ----------
      Dit is de enige plek waar een merkkleur een waarde krijgt. Alles daaronder
@@ -264,8 +310,8 @@
 
      De maten zijn niet aangeraakt. Alle font-size-waarden en de responsive
      schaal hieronder zijn die van de template gebleven. */
-  --font-sans:     "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-heading:  "Assistant", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans:     "Karla", "Karla terugval", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading:  "Assistant", "Assistant terugval", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body:     var(--font-sans);
   /* De vier oude aliassen wijzen nu naar de juiste familie: alles wat 'light'
      of 'regular' was is lopende tekst (Karla), de koppen halen hun familie uit
@@ -1640,7 +1686,15 @@ main > section:has(+ section) > .container > .content-text-side-cta--container {
   .footer--widgets { padding: var(--space-section-y-mobile) var(--inset-x); }
   .footer .widget { margin-bottom: var(--space-700); }
 }
-.footer h4 {
+/* De kolomkoppen van de voet stonden op h4 en volgden op de h2 van het
+   slotblok. Dat is een sprong van twee niveaus, en dat is de enige fout die
+   Lighthouse op toegankelijkheid gaf (72 van de 73 pagina's).
+
+   Ze staan nu op h2. Niet h3: deze koppen zijn geen onderdeel van het
+   slotblok erboven maar eigen groepen binnen de voet-landmark, dus een niveau
+   dieper zou de verkeerde structuur suggereren. De klasse doet de opmaak, zodat
+   het niveau los staat van hoe het eruitziet. */
+.footer__kop {
   font-size: 0.9rem; text-transform: uppercase; letter-spacing: var(--tracking-label);
   margin-bottom: var(--space-600); font-family: var(--font-medium); font-weight: var(--weight-medium);
 }

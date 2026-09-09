@@ -197,7 +197,14 @@ def foto(sleutel, klasse='', laden='lazy', maten='100vw', alt=None):
        je alt='' mee."""
     naam, gb, gh, kb, kh, standaard_alt, map_, mb = FOTOS[sleutel]
     tekst = standaard_alt if alt is None else alt
-    prioriteit = ' fetchpriority="high" decoding="async"' if laden == 'eager' else ' decoding="async"'
+    # Een beeld dat lazy geladen wordt, is per definitie niet nodig om de
+    # pagina te tekenen, dus krijgt het lage prioriteit. Dat verandert niets aan
+    # óf het wordt opgehaald, alleen aan de plek in de rij: de browser gaf de
+    # foto's onder de vouw evenveel bandbreedte als de stylesheet en het
+    # lettertype, en op een mobiele lijn wachtte de hero-tekst daardoor op
+    # ruim twee megabyte aan beeld dat niemand nog zag.
+    prioriteit = (' fetchpriority="high" decoding="async"' if laden == 'eager'
+                  else ' fetchpriority="low" decoding="async"')
     breedtes = sorted(MATEN.get(sleutel) or ({kb, gb} | ({mb} if mb else set())))
     bron = lambda ext: ', '.join(f'assets/{map_}/{naam}-{b}.{ext} {b}w' for b in breedtes)
     klasse_attr = f' class="{klasse}"' if klasse else ''
@@ -354,8 +361,8 @@ def header(actief):
     return f'''<header class="header header--scrolled" id="siteHeader">
   <div class="header--container">
     <a href="index.html" class="header--logo" aria-label="Duyts Bouwconstructies, naar de homepage">
-      <img class="header--logo-kleur" src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40">
-      <img class="header--logo-wit" src="assets/logo/duyts-logo-wit.png" alt="" aria-hidden="true" width="112" height="40">
+      <img class="header--logo-kleur" src="assets/logo/duyts-logo.webp" alt="Duyts Bouwconstructies" width="112" height="40">
+      <img class="header--logo-wit" src="assets/logo/duyts-logo-wit.webp" alt="" aria-hidden="true" width="112" height="40">
     </a>
 
     <nav class="submenu" aria-label="Hoofdmenu">
@@ -408,17 +415,17 @@ def footer():
     <div class="footer--widgets">
       <div class="row footer--gap">
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <img src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40" style="margin-bottom:var(--space-500)">
+          <img src="assets/logo/duyts-logo.webp" alt="Duyts Bouwconstructies" width="112" height="40" style="margin-bottom:var(--space-500)">
           <p class="footer--intro">Constructieve adviezen voor verbouwing, funderingsherstel en nieuwbouw. Sinds 1981 vanuit Amsterdam, door het hele land.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <h4>Werkzaamheden</h4>
+          <h2 class="footer__kop">Werkzaamheden</h2>
           <ul role="list">
 {werkzaamheden}
           </ul>
         </div>
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <h4>Projecten</h4>
+          <h2 class="footer__kop">Projecten</h2>
           <ul role="list">
 {projecten}
             <li><a href="werkwijze.html">Werkwijze</a></li>
@@ -426,7 +433,7 @@ def footer():
           </ul>
         </div>
         <div class="col-lg-3 col-md-4 col-12 widget">
-          <h4>Contact</h4>
+          <h2 class="footer__kop">Contact</h2>
           <ul role="list">
             <li><a href="tel:{TELEFOON_LINK}">{TELEFOON_WEERGAVE}</a></li>
             <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
@@ -533,17 +540,57 @@ _VERSIES = {}
 
 
 def v(bestand):
-    """`bestand?v=<hash>` op basis van de inhoud. Bestaat het bestand niet, dan
-       komt de naam onveranderd terug: een ontbrekend bestand is een fout die
-       zichtbaar moet blijven in de netwerktab, niet iets om hier te maskeren."""
+    """Verwijzing naar een lokaal bestand: `<naam>?v=<hash van de inhoud>`.
+
+       Staat er een geminificeerde versie naast (`styleguide.min.css`), dan
+       verwijst dit naar die, en is de hash die van het geminificeerde bestand:
+       dat is immers wat de browser ophaalt. Die bestanden maakt `minify.py`;
+       ontbreken ze, dan gaat het gewone bestand mee en werkt de site
+       ongewijzigd, alleen wat zwaarder.
+
+       Bestaat het bestand helemaal niet, dan komt de naam onveranderd terug:
+       een ontbrekend bestand is een fout die zichtbaar moet blijven in de
+       netwerktab, niet iets om hier te maskeren."""
     if bestand not in _VERSIES:
         pad = pathlib.Path(__file__).resolve().parent.parent / bestand
+        klein = pad.with_name(f'{pad.stem}.min{pad.suffix}')
+        if klein.exists():
+            pad, naam = klein, klein.name
+        else:
+            naam = bestand
         try:
             hash8 = hashlib.sha256(pad.read_bytes()).hexdigest()[:8]
-            _VERSIES[bestand] = f'{bestand}?v={hash8}'
+            _VERSIES[bestand] = f'{naam}?v={hash8}'
         except OSError:
             _VERSIES[bestand] = bestand
     return _VERSIES[bestand]
+
+
+def inline(bestand):
+    """De inhoud van een klein stylesheet, om in de pagina te zetten.
+
+       Twee stylesheets zijn zo klein dat het ophalen ervan meer kost dan de
+       inhoud: `transitions.css` is 0,5 kB geminificeerd en de pagina-stylesheets
+       zijn 0,3 tot 6 kB. Op een mobiele verbinding blokkeerde elk van die twee
+       het tekenen 304 ms, en dat is bijna helemaal het heen-en-weer van het
+       verzoek. In de pagina gezet is die wachttijd nul.
+
+       styleguide.css blijft wél een los bestand: 59 kB in elke pagina zetten
+       maakt de HTML zwaarder dan wat het aan wachttijd scheelt, en dan is het
+       bovendien op elke pagina opnieuw ophalen in plaats van één keer uit de
+       cache.
+
+       De pagina-overgang kan hiermee om: page-transitions.js kopieert het
+       element met data-page-css uit het opgehaalde document en behandelt een
+       <style> apart van een <link> ("een <style> geldt meteen")."""
+    wortel = pathlib.Path(__file__).resolve().parent.parent
+    pad = wortel / bestand
+    klein = pad.with_name(f'{pad.stem}.min{pad.suffix}')
+    bron = klein if klein.exists() else pad
+    try:
+        return bron.read_text(encoding='utf-8').strip()
+    except OSError:
+        return ''
 
 
 def pagina(bestand, titel, omschrijving, namespace, pagina_css, css_naam,
@@ -583,14 +630,14 @@ def pagina(bestand, titel, omschrijving, namespace, pagina_css, css_naam,
 <link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin />
 
 <link rel="stylesheet" href="{v("styleguide.css")}" />
-<link rel="stylesheet" href="{v("transitions.css")}" />
+<style>{inline("transitions.css")}</style>
 <!-- De cookiebalk verschijnt pas als cookiebalk.js hem opbouwt, dus zijn stijl
      hoeft de eerste weergave niet op te houden. media="print" laat de browser
      hem buiten het kritieke pad ophalen; onload zet hem daarna alsnog aan. De
      noscript-regel vangt op dat zonder JavaScript ook die onload niet afgaat. -->
 <link rel="stylesheet" href="{v("cookiebalk.css")}" media="print" onload="this.media='all'" />
 <noscript><link rel="stylesheet" href="{v("cookiebalk.css")}" /></noscript>
-<link rel="stylesheet" href="{v(pagina_css)}" data-page-css="{css_naam}" />
+<style data-page-css="{css_naam}">{inline(pagina_css)}</style>
 
 <link rel="icon" href="assets/favicon/duyts-favicon.ico" sizes="16x16 32x32 48x48" />
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/duyts-favicon-32.png" />
@@ -747,7 +794,8 @@ def _logoset(verborgen=False):
             regels.append(
                 f'          <li class="logo-slider__logo">'
                 f'<img src="{LOGOMAP}{bestand}" alt="{alt}" '
-                f'width="{breedte}" height="{hoogte}" decoding="async"></li>')
+                f'width="{breedte}" height="{hoogte}" '
+                f'fetchpriority="low" decoding="async"></li>')
         else:
             regels.append(
                 f'          <li class="logo-slider__logo">'
