@@ -38,14 +38,16 @@ nog letterlijk de bron volgen.
 HOME = {
     'eyebrow': 'Constructief advies sinds 1981',
     'h1': 'Constructief advies voor verbouwing, fundering en nieuwbouw',
+    # Eén korte alinea, en met opzet kort: de hero stond op 58 woorden in twee
+    # alinea's, en daardoor vielen de twee knoppen eronder op de meeste
+    # telefoons buiten beeld (222 px op een iPhone SE, 314 px liggend). De
+    # opdrachtgeverslijst die hier stond is naar het statement hieronder
+    # verhuisd; hij stond nergens anders op de site, dus weglaten zou hem
+    # helemaal doen verdwijnen.
     'lead': [
         'Van een muurdoorbraak in een woning tot de volledige draagconstructie van '
-        'een appartementencomplex. Vanuit Amsterdam rekenen wij sinds 1981 aan '
-        'constructies die blijven staan, meegroeien en zich aanpassen aan wat de '
-        'toekomst vraagt.',
-        'Onze opdrachtgevers zijn particulieren, VvE&rsquo;s, architecten, aannemers, '
-        'projectontwikkelaars en woningbouwverenigingen. Wat hen verbindt, is de behoefte '
-        'aan een constructieve partner die meedenkt en overzicht houdt.',
+        'een appartementencomplex. Vanuit Amsterdam rekenen wij aan constructies die '
+        'blijven staan.',
     ],
     'cta_primair': ('Vraag een offerte aan', 'offerte.html'),
     'cta_secundair': ('Bekijk de projecten', 'projecten.html'),
@@ -59,7 +61,10 @@ HOME = {
         'Een belangrijk deel van onze expertise ligt bij funderingsonderzoek en '
         'funderingsherstel, met name bij oudere Amsterdamse panden. We kennen de stad, '
         'haar bodem en haar gebouwen, en de problemen die daarbij horen.',
-    ],
+            'Onze opdrachtgevers zijn particulieren, VvE&rsquo;s, architecten, aannemers, '
+        'projectontwikkelaars en woningbouwverenigingen. Wat hen verbindt, is de behoefte '
+        'aan een constructieve partner die meedenkt en overzicht houdt.',
+],
     'statement_cta': ('Bekijk alle werkzaamheden', 'verbouwing.html'),
 
     'werkzaamheden_kop': 'Waar wij aan rekenen',

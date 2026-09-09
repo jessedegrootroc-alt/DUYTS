@@ -77,6 +77,40 @@
 .hero--intro p + p { margin-top: 1.6em; }
 .hero--actions { margin-top: var(--space-700); display: flex; flex-wrap: wrap; gap: var(--space-300); }
 
+/* ---- De hero op een laag venster ----------------------------------------
+   De twee knoppen zijn de reden dat deze sectie er staat, dus die moeten in
+   beeld staan zonder scrollen. Dat was niet zo: gemeten vielen ze 125 px onder
+   de vouw op 1440x640, 222 px op een iPhone SE en 314 px op een liggende
+   telefoon. De hero is `min-height: 100svh`, maar hij groeit door zodra de
+   inhoud niet past, en dan schuiven de knoppen eruit.
+
+   De inleiding is daarom ingekort van 58 naar 22 woorden (zie inhoud_copy.py),
+   en hieronder gaat op een laag venster de lucht eraf. De bovenruimte van
+   160 px is er om de vaste balk vrij te houden; die is 116 px op desktop,
+   109 px op een liggende telefoon en 77 px onder 576 px breed. Wat daarboven
+   zit is lucht, en die gaat als eerste weg.
+
+   De kop krijgt ook een grens in vh: bij min(6vw, ...) is 6vw op een breed maar
+   laag venster nog steeds 86 px, en dan vult de kop alleen al de halve hoogte.
+   Boven 800 px hoog verandert er niets, want daar haalt de vh-grens de 72 px
+   uit de clamp niet. */
+@media (max-height: 800px) {
+  .hero--container { padding-top: 132px; padding-bottom: var(--space-500); }
+  .hero--title { margin: var(--space-400) 0; font-size: clamp(24px, min(6vw, 9vh), 72px); }
+  .hero--actions { margin-top: var(--space-500); }
+}
+@media (max-height: 520px) {
+  .hero--container { padding-top: 120px; padding-bottom: var(--space-400); }
+  .hero--title { margin: var(--space-300) 0; font-size: clamp(22px, min(5.5vw, 8.5vh), 72px); }
+  .hero--intro { font-size: 0.9375rem; }
+  .hero--actions { margin-top: var(--space-400); }
+}
+/* Onder 576 px breed staat de balk op 77 px, dus daar kan de bovenruimte
+   verder omlaag dan de 120 px hierboven. */
+@media (max-width: 576px) and (max-height: 800px) {
+  .hero--container { padding-top: 100px; }
+}
+
 /* ---- USP's --------------------------------------------------------------- */
 .usp__getal { font-family: var(--font-light); font-weight: var(--weight-light);
               font-size: clamp(3rem, 2rem + 4vw, 5rem); line-height: 1; margin: 0; }
