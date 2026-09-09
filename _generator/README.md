@@ -153,13 +153,29 @@ zichtbare naam erin zit, niet dat hij er gelijk aan is.
 ### Meten
 
 ```bash
-python3 -m http.server 8080          # of een server die comprimeert
-npx lighthouse http://127.0.0.1:8080/index.html --view
+python3 _generator/devserver.py 8081
+npx lighthouse http://127.0.0.1:8081/index.html --view
 ```
 
-`python3 -m http.server` comprimeert niet en stuurt geen cache-headers, dus
-daar meet je ongeveer vijf punten te laag. Zie `DEPLOY.md`. Reken ook op een
-spreiding van vijf punten tussen runs: neem de mediaan van vijf, niet één run.
+Meet tegen `devserver.py` en niet tegen `python3 -m http.server`: die laatste
+comprimeert niet en stuurt geen cache-headers, en dan meet je ongeveer vijf
+punten te laag. `devserver.py` doet wat een echte host doet; de instellingen die
+de host moet krijgen staan in `DEPLOY.md`.
+
+Reken op een spreiding van vijf punten tussen runs. Neem de mediaan van vijf
+runs, niet één meting: tijdens dit werk gaf dezelfde site achtereenvolgens 89,
+93, 93, 96 en 90.
+
+## Controleren
+
+```bash
+python3 _generator/eindcontrole.py
+```
+
+Kijkt niet of de site mooi is, maar of er niets kapot of dubbel is: kapotte
+links, koppenniveaus, dubbele titles, dubbele labels in de navigatie, lege
+alinea's, ontbrekende alt-teksten en resten van het oude template. Draai dit na
+elke `bouw_alles.py`.
 
 ## Versiehash op CSS en JavaScript
 

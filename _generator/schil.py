@@ -92,7 +92,10 @@ def bouw_nav():
         },
         {"soort": "link", "href": "offerte.html", "label": "Offerte"},
         {"soort": "link", "href": "over-ons.html", "label": "Over ons"},
-        {"soort": "link", "href": "contact.html", "label": "Contact"},
+        # Contact staat hier NIET in. De balk heeft er zelf al een, als
+        # highlight-knop rechts, en de mobiele lade als chip in de topbalk.
+        # Stond hij hier ook, dan las de navigatie "... Over ons | Contact |
+        # Contact": één keer gewoon en één keer uitgelicht.
     ])
 
 
@@ -337,8 +340,12 @@ def header(actief):
 
     def mobiel_item(item, i):
         vertraging = f'style="transition-delay:{i * 60}ms"'
+        # Het label staat er twee keer: de tweede schuift bij hover in beeld.
+        # Zonder aria-hidden leest een schermlezer "HomeHome", want beide
+        # kopieën tellen mee voor de toegankelijke naam van de link.
         rol = (f'<span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner">'
-               f'<span>{item["label"]}</span><span>{item["label"]}</span></span></span>')
+               f'<span>{item["label"]}</span>'
+               f'<span aria-hidden="true">{item["label"]}</span></span></span>')
         if item["soort"] == "link":
             return (f'      <li><a class="mobile-panel--nav-link" href="{item["href"]}" '
                     f'data-panel-sluit {vertraging}>{rol}</a></li>')
@@ -357,6 +364,11 @@ def header(actief):
     links = "\n".join(bureau_item(n) for n in NAV)
     panelen = "\n".join(filter(None, (paneel(n) for n in NAV)))
     paneel_links = "\n".join(mobiel_item(n, i) for i, n in enumerate(NAV))
+    # Contact zit niet in NAV, dus de actieve staat van die knop wordt hier
+    # gezet in plaats van door bureau_item().
+    op_contact = actief == 'contact.html'
+    contact_actief = ' is-actief' if op_contact else ''
+    contact_huidig = ' aria-current="page"' if op_contact else ''
 
     return f'''<header class="header header--scrolled" id="siteHeader">
   <div class="header--container">
@@ -367,7 +379,7 @@ def header(actief):
 
     <nav class="submenu" aria-label="Hoofdmenu">
 {links}
-      <a class="submenu--link highlight" href="contact.html">Contact</a>
+      <a class="submenu--link highlight{contact_actief}" href="contact.html"{contact_huidig}>Contact</a>
     </nav>
 
     <button type="button" id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobilePanel">
