@@ -1,0 +1,377 @@
+{
+ "duyts-team": {
+  "bron": "/images/company/het-team-01.jpg",
+  "rol": "inhoud",
+  "alt": "Het team van Duyts Bouwconstructies op een rij in het kantoor"
+ },
+ "duyts-directie": {
+  "bron": "/images/company/historie-01.jpg",
+  "rol": "inhoud",
+  "alt": "Twee directieleden van Duyts, met tussen hen een luchtfoto van een Amsterdams bouwblok"
+ },
+ "duyts-kantoor-groep": {
+  "bron": "/images/company/over-ons-01.jpg",
+  "rol": "inhoud",
+  "alt": "Groepsfoto van de medewerkers van Duyts in het kantoor aan de Van Slingelandtstraat"
+ },
+ "duyts-registerconstructeur": {
+  "bron": "/images/company/registerconstructeur-01.jpg",
+  "rol": "inhoud",
+  "alt": "Constructeur wijst iets aan op een beeldscherm terwijl een collega meekijkt"
+ },
+ "duyts-team-lunch": {
+  "bron": "/images/company/vacatures-01.jpg",
+  "rol": "inhoud",
+  "alt": "Medewerkers van Duyts aan tafel tijdens de lunch op het kantoor"
+ },
+ "duyts-hoofdbanner": {
+  "bron": "/images/pages/home-01.jpg",
+  "rol": "hero",
+  "alt": "Brede band met verschillende Amsterdamse panden waaraan Duyts heeft gerekend"
+ },
+ "duyts-kopjes": {
+  "bron": "/images/pages/contact-01.jpg",
+  "rol": "inhoud",
+  "alt": "Twee koffiekopjes met het logo van Duyts Bouwconstructies"
+ },
+ "duyts-opening": {
+  "bron": "/images/pages/contact-02.jpg",
+  "rol": "inhoud",
+  "alt": "Grote groep genodigden in het kantoor van Duyts tijdens de opening"
+ },
+ "duyts-dienst-verbouwing": {
+  "bron": "/images/services/verbouwing-01.jpg",
+  "rol": "hero",
+  "alt": "Monumentaal interieur met een rode staalconstructie tijdens een verbouwing"
+ },
+ "duyts-dienst-muurdoorbraak": {
+  "bron": "/images/services/muurdoorbraak-01.jpg",
+  "rol": "hero",
+  "alt": "Doorbroken muur met een stalen ligger tussen twee ruimtes"
+ },
+ "duyts-dienst-vloerbalklagen": {
+  "bron": "/images/services/verstijving-van-de-vloerbalklagen-01.jpg",
+  "rol": "hero",
+  "alt": "Houten vloerbalklaag van onderen gezien, met een gemetselde muur ernaast"
+ },
+ "duyts-dienst-vloerbalklagen-detail": {
+  "bron": "/images/services/verstijving-van-de-vloerbalklagen-03.jpg",
+  "rol": "inhoud",
+  "alt": "Detail van houten vloerbalken die op een gemetselde muur rusten"
+ },
+ "duyts-dienst-trapgat": {
+  "bron": "/images/services/constructie-ten-behoeve-van-een-trapgat-01.jpg",
+  "rol": "hero",
+  "alt": "Vloeropening met een houten raveelconstructie eromheen"
+ },
+ "duyts-dienst-dakterras": {
+  "bron": "/images/services/constructie-ten-behoeve-van-een-dakterras-01.jpg",
+  "rol": "hero",
+  "alt": "Stalen dakconstructie bovendaks aangebracht voor een dakterras"
+ },
+ "duyts-dienst-dakterras-detail": {
+  "bron": "/images/services/constructie-ten-behoeve-van-een-dakterras-03.jpg",
+  "rol": "inhoud",
+  "alt": "Dakterras met een witte balustrade, gezien over de daken van de buurt"
+ },
+ "duyts-dienst-stabiliteitsportalen": {
+  "bron": "/images/services/stabiliteitsportalen-01.jpg",
+  "rol": "hero",
+  "alt": "Rode stalen stabiliteitsportalen in een uitgebroken verdieping"
+ },
+ "duyts-dienst-dakkapel": {
+  "bron": "/images/services/stabiliteitsberekening-01.jpg",
+  "rol": "hero",
+  "alt": "Houten kapconstructie van binnenuit gezien"
+ },
+ "duyts-dienst-achteraanbouw": {
+  "bron": "/images/services/achteraanbouw-constructie-01.jpg",
+  "rol": "hero",
+  "alt": "Ruwbouw van een achteraanbouw met vlechtwerk voor de betonvloer"
+ },
+ "duyts-dienst-stutconstructie": {
+  "bron": "/images/services/stutconstructie-stempelconstructie-01.jpg",
+  "rol": "hero",
+  "alt": "Houten stutconstructie die een vloer en muur tijdelijk opvangt"
+ },
+ "duyts-dienst-stutconstructie-detail": {
+  "bron": "/images/services/stutconstructie-stempelconstructie-03.jpg",
+  "rol": "inhoud",
+  "alt": "Monumentale gevel met een stalen steun- en stempelconstructie ervoor"
+ },
+ "duyts-dienst-fundering": {
+  "bron": "/images/services/fundering-01.jpg",
+  "rol": "hero",
+  "alt": "Uitgebroken pand met stalen liggers en stempels op de begane grond"
+ },
+ "duyts-dienst-funderingsonderzoek": {
+  "bron": "/images/services/funderingsonderzoek-01.jpg",
+  "rol": "hero",
+  "alt": "Inspectieput waarin de houten paalfundering onder een pand zichtbaar is"
+ },
+ "duyts-dienst-paalfundering": {
+  "bron": "/images/services/funderingsonderzoek-03.jpg",
+  "rol": "inhoud",
+  "alt": "Historische tekening van de Amsterdamse paalfundering met houten palen, kespen en langsbalken"
+ },
+ "duyts-dienst-funderingsherstel": {
+  "bron": "/images/services/funderingsherstel-01.jpg",
+  "rol": "hero",
+  "alt": "Straat met panden die in de steigers staan voor funderingsherstel"
+ },
+ "duyts-dienst-kelderbak": {
+  "bron": "/images/services/funderingsherstel-met-kelderbak-01.jpg",
+  "rol": "hero",
+  "alt": "Kelder met stalen stempels tijdens funderingsherstel"
+ },
+ "duyts-dienst-kelderbak-detail": {
+  "bron": "/images/services/funderingsherstel-met-kelderbak-03.jpg",
+  "rol": "inhoud",
+  "alt": "Diepe bouwput met een medewerker en stalen buispalen"
+ },
+ "duyts-dienst-zelfdragende-kelderbak": {
+  "bron": "/images/services/zelfdragende-kelderbak-01.jpeg",
+  "rol": "hero",
+  "alt": "Kelderbak in aanbouw met vlechtwerk en stalen stempels"
+ },
+ "duyts-dienst-tafelconstructie": {
+  "bron": "/images/services/stutconstructie-tafelconstructie-01.jpeg",
+  "rol": "hero",
+  "alt": "Tafelconstructie: stalen liggers op stempels boven een uitgegraven begane grond"
+ },
+ "duyts-dienst-nieuwbouw": {
+  "bron": "/images/services/nieuwbouw-01.jpg",
+  "rol": "hero",
+  "alt": "Glazen paviljoen met een slanke staalconstructie"
+ },
+ "duyts-dienst-appartementencomplex": {
+  "bron": "/images/services/appartementencomplex-01.jpg",
+  "rol": "hero",
+  "alt": "Nieuw bakstenen appartementencomplex op een hoek, in de schemering"
+ },
+ "duyts-dienst-woonhuizen": {
+  "bron": "/images/services/woonhuizen-01.jpg",
+  "rol": "hero",
+  "alt": "Nieuwbouwwoning met grote glaspartijen en warm licht binnen"
+ },
+ "duyts-dienst-kantoorgebouwen": {
+  "bron": "/images/services/kantoorgebouwen-01.jpg",
+  "rol": "hero",
+  "alt": "Kantoorgebouw in aanbouw met een zichtbare staalconstructie"
+ },
+ "duyts-dienst-bedrijfsgebouwen": {
+  "bron": "/images/services/bedrijfsgebouwen-01.jpg",
+  "rol": "hero",
+  "alt": "Bedrijfsgebouw met houten lamellen langs de entree"
+ },
+ "duyts-dienst-constructieberekening": {
+  "bron": "/images/services/constructieberekening-01.jpg",
+  "rol": "hero",
+  "alt": "Wapeningstekening van een begane grondvloer"
+ },
+ "duyts-dienst-schaderapportage": {
+  "bron": "/images/services/advies-rechtbanksituaties-01.jpg",
+  "rol": "hero",
+  "alt": "Scheurvorming in een gevel boven een houten balk"
+ },
+ "duyts-dienst-certificaat": {
+  "bron": "/images/services/certificaat-funderingsherstel-01.jpg",
+  "rol": "hero",
+  "alt": "Overleg met drie personen aan tafel in het kantoor van Duyts"
+ },
+ "duyts-project-artis": {
+  "bron": "/images/projects/artis-01.jpg",
+  "rol": "kaart",
+  "alt": "Waterpartij met rotsen in Artis"
+ },
+ "duyts-project-bibliotheek-woerden": {
+  "bron": "/images/projects/bibliotheek-woerden-01.jpg",
+  "rol": "kaart",
+  "alt": "Bibliotheek Woerden: bakstenen gebouw met een glazen plint op de hoek"
+ },
+ "duyts-project-boerderij-amstel": {
+  "bron": "/images/projects/boerderij-amstel-01.jpg",
+  "rol": "kaart",
+  "alt": "Houten kapconstructie van een boerderij wordt met een kraan geplaatst"
+ },
+ "duyts-project-buitenveldert": {
+  "bron": "/images/projects/buitenveldert-01.jpg",
+  "rol": "kaart",
+  "alt": "Prefab betonelementen op een bouwplaats in Buitenveldert"
+ },
+ "duyts-project-charlotte-montpensierlaan": {
+  "bron": "/images/projects/charlotte-montpensierlaan-01.jpg",
+  "rol": "kaart",
+  "alt": "Bakstenen appartementengebouw met uitkragend balkon"
+ },
+ "duyts-project-cornelis-branderhorststraat": {
+  "bron": "/images/projects/cornelis-branderhorststraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Nieuwe houtskeletconstructie van een schuur in aanbouw"
+ },
+ "duyts-project-dam": {
+  "bron": "/images/projects/dam-01.jpg",
+  "rol": "kaart",
+  "alt": "Historische panden aan de Dam in Amsterdam"
+ },
+ "duyts-project-de-ruijterkade": {
+  "bron": "/images/projects/de-ruijterkade-01.jpeg",
+  "rol": "kaart",
+  "alt": "Zolder met houten kapconstructie tijdens de renovatie"
+ },
+ "duyts-project-duivendrechtsekade": {
+  "bron": "/images/projects/duivendrechtsekade-01.jpeg",
+  "rol": "kaart",
+  "alt": "Kraan hijst een betonelement, met de skyline op de achtergrond"
+ },
+ "duyts-project-emmastraat": {
+  "bron": "/images/projects/emmastraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Uitgebroken interieur met houten stempels en steigerwerk"
+ },
+ "duyts-project-fagelstraat": {
+  "bron": "/images/projects/fagelstraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Woon-zorgcomplex met houten lamellen langs de gevel"
+ },
+ "duyts-project-chassekerk": {
+  "bron": "/images/projects/funderingsherstel-chassekerk-01.jpg",
+  "rol": "kaart",
+  "alt": "Kerkinterieur met opengebroken vloer tijdens funderingsherstel"
+ },
+ "duyts-project-chassekerk-detail": {
+  "bron": "/images/projects/funderingsherstel-chassekerk-02.jpg",
+  "rol": "inhoud",
+  "alt": "Opengebroken kerkvloer met vlechtwerk en water in de bouwput"
+ },
+ "duyts-project-haringpakkersteeg": {
+  "bron": "/images/projects/haringpakkersteeg-01.jpg",
+  "rol": "kaart",
+  "alt": "Stalen loopbrug met een glazen overkapping op een dak"
+ },
+ "duyts-project-het-saentje": {
+  "bron": "/images/projects/het-saentje-01.jpg",
+  "rol": "kaart",
+  "alt": "Rij nieuwe geveltoppen in verschillende kleuren"
+ },
+ "duyts-project-waterschild-muiderslot": {
+  "bron": "/images/projects/het-waterschild-muiderslot-01.jpg",
+  "rol": "kaart",
+  "alt": "Bootvormige betonconstructie in aanbouw bij het Muiderslot"
+ },
+ "duyts-project-ijburg": {
+  "bron": "/images/projects/ijburg-01.jpg",
+  "rol": "kaart",
+  "alt": "Rij woningen op IJburg met sterk verschillende gevels"
+ },
+ "duyts-project-jan-luijkenstraat": {
+  "bron": "/images/projects/jan-luijkenstraat-01.jpeg",
+  "rol": "kaart",
+  "alt": "Negentiende-eeuwse gevel met een dichtgezette pui tijdens de verbouwing"
+ },
+ "duyts-project-kerktoren": {
+  "bron": "/images/projects/kerktoren-01.jpg",
+  "rol": "kaart",
+  "alt": "Bakstenen kerktoren tussen woonhuizen"
+ },
+ "duyts-project-kloveniersburgwal": {
+  "bron": "/images/projects/kloveniersburgwal-01.jpg",
+  "rol": "kaart",
+  "alt": "Monumentale hal met galerijen en steigerwerk"
+ },
+ "duyts-project-kloveniersburgwal-detail": {
+  "bron": "/images/projects/kloveniersburgwal-02.jpeg",
+  "rol": "inhoud",
+  "alt": "Dezelfde monumentale hal vanaf de galerij gezien"
+ },
+ "duyts-project-minervalaan": {
+  "bron": "/images/projects/minervalaan-2-01.jpg",
+  "rol": "kaart",
+  "alt": "Bakstenen villa uit het interbellum aan de Minervalaan"
+ },
+ "duyts-project-molukkenstraat": {
+  "bron": "/images/projects/molukkenstraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Staalconstructie in aanbouw met een mobiele kraan ernaast"
+ },
+ "duyts-project-oranje-nassaulaan": {
+  "bron": "/images/projects/oranje-nassaulaan-01.jpeg",
+  "rol": "kaart",
+  "alt": "Bakstenen gevel met grote donkere kozijnen"
+ },
+ "duyts-project-p-c-hooftstraat": {
+  "bron": "/images/projects/p-c-hooftstraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Winkelpui in de P.C. Hooftstraat"
+ },
+ "duyts-project-p-c-hooftstraat-2": {
+  "bron": "/images/projects/p-c-hooftstraat-2-01.jpeg",
+  "rol": "kaart",
+  "alt": "Uitgebroken winkelruimte met stalen liggers en stempels"
+ },
+ "duyts-project-p-c-hooftstraat-2-detail": {
+  "bron": "/images/projects/p-c-hooftstraat-2-02.jpeg",
+  "rol": "inhoud",
+  "alt": "Casco van een winkelpand met houten balken en sloopmateriaal"
+ },
+ "duyts-project-prinsengracht": {
+  "bron": "/images/projects/prinsengracht-01.jpg",
+  "rol": "kaart",
+  "alt": "Houten stutconstructie voor een grachtengevel"
+ },
+ "duyts-project-prinses-margrietstraat": {
+  "bron": "/images/projects/prinses-margrietstraat-01.jpeg",
+  "rol": "kaart",
+  "alt": "Rode stalen liggers die een houten vloer ondersteunen"
+ },
+ "duyts-project-schade-rapportage": {
+  "bron": "/images/projects/schade-rapportage-01.jpeg",
+  "rol": "kaart",
+  "alt": "Scheur in een gepleisterde wand boven een houten balk"
+ },
+ "duyts-project-school-ijsselmeerstraat": {
+  "bron": "/images/projects/school-ijsselmeerstraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Nieuw bakstenen schoolgebouw met brede raamstroken"
+ },
+ "duyts-project-smederij": {
+  "bron": "/images/projects/smederij-01.jpg",
+  "rol": "kaart",
+  "alt": "Bedrijfshal met een graafmachine en zandaanvulling"
+ },
+ "duyts-project-stadsvilla-amstelveen": {
+  "bron": "/images/projects/stadsvilla-amstelveen-01.jpg",
+  "rol": "kaart",
+  "alt": "Moderne stadsvilla met glazen gevel in aanbouw"
+ },
+ "duyts-project-stadsvilla-amsterdam": {
+  "bron": "/images/projects/stadsvilla-amsterdam-01.jpg",
+  "rol": "kaart",
+  "alt": "Bakstenen villa die op stempels staat boven een uitgegraven kelder"
+ },
+ "duyts-project-tweede-van-swindenstraat": {
+  "bron": "/images/projects/tweede-van-swindenstraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Gevels teruggebracht tot het houten skelet tijdens de renovatie"
+ },
+ "duyts-project-valeriusplein": {
+  "bron": "/images/projects/valeriusplein-01.jpg",
+  "rol": "kaart",
+  "alt": "Appartementengebouw met balkons en veel groen ervoor"
+ },
+ "duyts-project-van-eeghenstraat": {
+  "bron": "/images/projects/van-eeghenstraat-01.jpg",
+  "rol": "kaart",
+  "alt": "Diepe bouwput met stalen stempels voor een twee-laagse kelder"
+ },
+ "duyts-project-willem-kesstraat": {
+  "bron": "/images/projects/willem-kesstraat-01.jpeg",
+  "rol": "kaart",
+  "alt": "Kelder met stalen stempels en kolommen"
+ },
+ "duyts-hero-still": {
+  "bron": "assets_bron/duyts-hero-still.jpg",
+  "rol": "hero",
+  "alt": "Amsterdamse grachtenpanden in de steigers tijdens een renovatie, gezien vanaf de overkant van het water"
+ }
+}

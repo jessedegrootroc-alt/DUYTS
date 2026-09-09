@@ -1,0 +1,268 @@
+{
+  "sourceUrl": "https://www.duyts.nl/ (identiek op alle pagina's)",
+  "mainNavigation": [
+    {
+      "label": "Home",
+      "url": "https://www.duyts.nl/",
+      "internalSlug": "home",
+      "existsInExport": true
+    },
+    {
+      "label": "Werkzaamheden",
+      "url": "#",
+      "internalSlug": null,
+      "note": "dropdown parent zonder eigen pagina",
+      "children": [
+        {
+          "label": "Verbouwing",
+          "url": "/werkzaamheden/verbouwing/",
+          "internalSlug": "werkzaamheden/verbouwing",
+          "existsInExport": false,
+          "note": "relatief pad; /werkzaamheden/<x>/ is een alias die op de live site dezelfde pagina toont als /<x>/ (canonical)",
+          "children": [
+            {
+              "label": "Muurdoorbraak",
+              "url": "https://www.duyts.nl/verbouwing/muurdoorbraak/",
+              "internalSlug": "verbouwing/muurdoorbraak",
+              "existsInExport": true
+            },
+            {
+              "label": "Verstijving van de vloerbalklagen",
+              "url": "https://www.duyts.nl/verbouwing/verstijving-van-de-vloerbalklagen/",
+              "internalSlug": "verbouwing/verstijving-van-de-vloerbalklagen",
+              "existsInExport": true
+            },
+            {
+              "label": "Trapgat",
+              "url": "https://www.duyts.nl/verbouwing/constructie-ten-behoeve-van-een-trapgat/",
+              "internalSlug": "verbouwing/constructie-ten-behoeve-van-een-trapgat",
+              "existsInExport": true
+            },
+            {
+              "label": "Vide",
+              "url": "https://www.duyts.nl/verbouwing/vide-constructie/",
+              "internalSlug": "verbouwing/vide-constructie",
+              "existsInExport": true
+            },
+            {
+              "label": "Dakterras",
+              "url": "https://www.duyts.nl/verbouwing/constructie-ten-behoeve-van-een-dakterras/",
+              "internalSlug": "verbouwing/constructie-ten-behoeve-van-een-dakterras",
+              "existsInExport": true
+            },
+            {
+              "label": "Stabiliteitsportalen",
+              "url": "https://www.duyts.nl/verbouwing/stabiliteitsportalen/",
+              "internalSlug": "verbouwing/stabiliteitsportalen",
+              "existsInExport": true
+            },
+            {
+              "label": "Dakkapel/Dakopbouw",
+              "url": "https://www.duyts.nl/verbouwing/dakkapel-dakopbouw/",
+              "internalSlug": "verbouwing/dakkapel-dakopbouw",
+              "existsInExport": true
+            },
+            {
+              "label": "Achteraanbouw",
+              "url": "https://www.duyts.nl/verbouwing/achteraanbouw-constructie/",
+              "internalSlug": "verbouwing/achteraanbouw-constructie",
+              "existsInExport": true
+            },
+            {
+              "label": "Stut- of stempelconstructie",
+              "url": "https://www.duyts.nl/verbouwing/stutconstructie-stempelconstructie/",
+              "internalSlug": "verbouwing/stutconstructie-stempelconstructie",
+              "existsInExport": true
+            }
+          ]
+        },
+        {
+          "label": "Fundering",
+          "url": "/werkzaamheden/fundering/",
+          "internalSlug": "werkzaamheden/fundering",
+          "existsInExport": false,
+          "note": "relatief pad; /werkzaamheden/<x>/ is een alias die op de live site dezelfde pagina toont als /<x>/ (canonical)",
+          "children": [
+            {
+              "label": "Funderingsonderzoek",
+              "url": "https://www.duyts.nl/fundering/funderingsonderzoek/",
+              "internalSlug": "fundering/funderingsonderzoek",
+              "existsInExport": true
+            },
+            {
+              "label": "Funderingsherstel",
+              "url": "https://www.duyts.nl/fundering/funderingsherstel/",
+              "internalSlug": "fundering/funderingsherstel",
+              "existsInExport": true
+            },
+            {
+              "label": "Funderingsherstel met kelderbak",
+              "url": "https://www.duyts.nl/fundering/funderingsherstel-met-kelderbak/",
+              "internalSlug": "fundering/funderingsherstel-met-kelderbak",
+              "existsInExport": true
+            },
+            {
+              "label": "Zelfdragende kelderbak",
+              "url": "https://www.duyts.nl/fundering/zelfdragende-kelderbak/",
+              "internalSlug": "fundering/zelfdragende-kelderbak",
+              "existsInExport": true
+            },
+            {
+              "label": "Stut-of tafelconstructie",
+              "url": "https://www.duyts.nl/fundering/stutconstructie-tafelconstructie/",
+              "internalSlug": "fundering/stutconstructie-tafelconstructie",
+              "existsInExport": true
+            }
+          ]
+        },
+        {
+          "label": "Nieuwbouw",
+          "url": "/werkzaamheden/nieuwbouw/",
+          "internalSlug": "werkzaamheden/nieuwbouw",
+          "existsInExport": false,
+          "note": "relatief pad; /werkzaamheden/<x>/ is een alias die op de live site dezelfde pagina toont als /<x>/ (canonical)",
+          "children": [
+            {
+              "label": "Appartementencomplex",
+              "url": "https://www.duyts.nl/nieuwbouw/appartementencomplex/",
+              "internalSlug": "nieuwbouw/appartementencomplex",
+              "existsInExport": true
+            },
+            {
+              "label": "Woonhuizen",
+              "url": "https://www.duyts.nl/nieuwbouw/woonhuizen/",
+              "internalSlug": "nieuwbouw/woonhuizen",
+              "existsInExport": true
+            },
+            {
+              "label": "Kantoorgebouwen",
+              "url": "https://www.duyts.nl/nieuwbouw/kantoorgebouwen/",
+              "internalSlug": "nieuwbouw/kantoorgebouwen",
+              "existsInExport": true
+            },
+            {
+              "label": "Bedrijfsgebouwen",
+              "url": "https://www.duyts.nl/nieuwbouw/bedrijfsgebouwen/",
+              "internalSlug": "nieuwbouw/bedrijfsgebouwen",
+              "existsInExport": true
+            }
+          ]
+        },
+        {
+          "label": "Advies & rechtbanksituaties",
+          "url": "/werkzaamheden/advies-rechtbanksituaties/",
+          "internalSlug": "werkzaamheden/advies-rechtbanksituaties",
+          "existsInExport": false,
+          "note": "relatief pad; /werkzaamheden/<x>/ is een alias die op de live site dezelfde pagina toont als /<x>/ (canonical)"
+        }
+      ]
+    },
+    {
+      "label": "Projecten",
+      "url": "#",
+      "internalSlug": null,
+      "note": "dropdown parent zonder eigen pagina",
+      "children": [
+        {
+          "label": "Funderingsherstel",
+          "url": "https://www.duyts.nl/portfolio_category/funderingsherstel/",
+          "internalSlug": "portfolio_category/funderingsherstel",
+          "existsInExport": true
+        },
+        {
+          "label": "Funderingsonderzoek",
+          "url": "https://www.duyts.nl/funderingsonderzoek-projecten/",
+          "internalSlug": "funderingsonderzoek-projecten",
+          "existsInExport": true
+        },
+        {
+          "label": "Nieuwbouw",
+          "url": "https://www.duyts.nl/portfolio_category/nieuwbouw/",
+          "internalSlug": "portfolio_category/nieuwbouw",
+          "existsInExport": true
+        },
+        {
+          "label": "Verbouwing",
+          "url": "https://www.duyts.nl/portfolio_category/verbouwing/",
+          "internalSlug": "portfolio_category/verbouwing",
+          "existsInExport": true
+        },
+        {
+          "label": "Schaderapportage",
+          "url": "https://www.duyts.nl/schaderapportage/",
+          "internalSlug": "schaderapportage",
+          "existsInExport": true
+        }
+      ]
+    },
+    {
+      "label": "Offerte",
+      "url": "https://www.duyts.nl/offerte/",
+      "internalSlug": "offerte",
+      "existsInExport": true
+    },
+    {
+      "label": "Over ons",
+      "url": "https://www.duyts.nl/over-ons/",
+      "internalSlug": "over-ons",
+      "existsInExport": true,
+      "children": [
+        {
+          "label": "Registerconstructeur",
+          "url": "https://www.duyts.nl/over-ons/registerconstructeur/",
+          "internalSlug": "over-ons/registerconstructeur",
+          "existsInExport": true
+        },
+        {
+          "label": "Het team",
+          "url": "https://www.duyts.nl/over-ons/het-team/",
+          "internalSlug": "over-ons/het-team",
+          "existsInExport": true
+        },
+        {
+          "label": "Historie",
+          "url": "https://www.duyts.nl/over-ons/historie/",
+          "internalSlug": "over-ons/historie",
+          "existsInExport": true
+        },
+        {
+          "label": "Werkwijze",
+          "url": "https://www.duyts.nl/werkwijze/",
+          "internalSlug": "werkwijze",
+          "existsInExport": true
+        },
+        {
+          "label": "Certificaat",
+          "url": "https://www.duyts.nl/certificaat-funderingsherstel/",
+          "internalSlug": "certificaat-funderingsherstel",
+          "existsInExport": true
+        }
+      ]
+    },
+    {
+      "label": "Vacatures",
+      "url": "https://werkenbij.duyts.nl",
+      "external": true
+    },
+    {
+      "label": "Contact",
+      "url": "https://www.duyts.nl/contact/",
+      "internalSlug": "contact",
+      "existsInExport": true
+    }
+  ],
+  "footerNavigation": [
+    {
+      "text": "vactures",
+      "href": "https://www.duyts.nl/over-ons/vacatures/"
+    }
+  ],
+  "footerText": "Duyts Bouwconstructies BV\nVan Slingelandtstraat 28\n1051 CH Amsterdam\n020-6847475\nKvK: 33228370\nWij zijn op zoek naar een constructeur, tekenaar en een stagiar.\nBekijk onze\nvactures\n!",
+  "copyright": "© Duyts bouwconstructies bv",
+  "notes": [
+    "'Werkzaamheden' en 'Projecten' zijn dropdown-parents met href '#': geen eigen pagina.",
+    "Submenu-items onder Werkzaamheden gebruiken /werkzaamheden/<slug>/ als URL; de live site toont daar dezelfde pagina als /<slug>/ met canonical /<slug>/.",
+    "'Vacatures' in de hoofdnavigatie linkt naar het externe subdomein https://werkenbij.duyts.nl (niet meegenomen in deze export).",
+    "De footer linkt naar /over-ons/vacatures/ met de linktekst 'vactures' (typfout staat zo op de live site)."
+  ]
+}

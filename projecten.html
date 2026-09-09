@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projecten | Duyts Bouwconstructies BV</title>
+<meta name="description" content="Constructieve adviezen bij restauraties, verbouwingen, funderingsherstel en nieuwbouw. Een selectie van projecten van Duyts Bouwconstructies." />
+<link rel="canonical" href="https://www.duyts.nl/projecten.html" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Duyts Bouwconstructies B.V." />
+<meta name="theme-color" content="#FFFFFF" />
+<meta name="color-scheme" content="light" />
+
+<!-- GSAP en Barba komen van jsDelivr. Het opzetten van die verbinding (dns,
+     tcp, tls) kost op een telefoon een paar honderd ms en begint nu al terwijl
+     de HTML nog binnenkomt, in plaats van pas onderaan de pagina. -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+<!-- Het lettertype staat in de kop van de pagina en is dus onderdeel van de
+     LCP. Zonder preload vindt de browser het pas nadat styleguide.css binnen is
+     en ontleed is. crossorigin moet erbij, ook al staat het bestand op dezelfde
+     server: een font wordt altijd in CORS-modus opgehaald, en zonder dat woord
+     haalt de browser het twee keer op. -->
+<link rel="preload" href="assets/fonts/assistant-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="stylesheet" href="styleguide.css?v=424acdcc" />
+<link rel="stylesheet" href="transitions.css?v=af37e0f4" />
+<!-- De cookiebalk verschijnt pas als cookiebalk.js hem opbouwt, dus zijn stijl
+     hoeft de eerste weergave niet op te houden. media="print" laat de browser
+     hem buiten het kritieke pad ophalen; onload zet hem daarna alsnog aan. De
+     noscript-regel vangt op dat zonder JavaScript ook die onload niet afgaat. -->
+<link rel="stylesheet" href="cookiebalk.css?v=16254147" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="cookiebalk.css?v=16254147" /></noscript>
+<link rel="stylesheet" href="cases.css?v=7503e8bf" data-page-css="cases" />
+
+<link rel="icon" href="assets/favicon/duyts-favicon.ico" sizes="16x16 32x32 48x48" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/duyts-favicon-32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/duyts-favicon-192.png" />
+<link rel="apple-touch-icon" href="assets/favicon/duyts-apple-touch-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Duyts Bouwconstructies BV" />
+<meta property="og:locale" content="nl_NL" />
+<meta property="og:url" content="https://www.duyts.nl/projecten.html" />
+<meta property="og:title" content="Projecten | Duyts Bouwconstructies BV" />
+<meta property="og:description" content="Constructieve adviezen bij restauraties, verbouwingen, funderingsherstel en nieuwbouw. Een selectie van projecten van Duyts Bouwconstructies." />
+<meta property="og:image" content="https://www.duyts.nl/assets/social/duyts-deelafbeelding.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Duyts Bouwconstructies BV: constructieve adviezen sinds 1981" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.duyts.nl/assets/social/duyts-deelafbeelding.png" />
+<meta name="twitter:title" content="Projecten | Duyts Bouwconstructies BV" />
+<meta name="twitter:description" content="Constructieve adviezen bij restauraties, verbouwingen, funderingsherstel en nieuwbouw. Een selectie van projecten van Duyts Bouwconstructies." />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Duyts Bouwconstructies B.V.",
+  "alternateName": "Duyts Bouwconstructies BV",
+  "foundingDate": "1981",
+  "url": "https://www.duyts.nl/",
+  "logo": "https://www.duyts.nl/assets/logo/duyts-logo.png",
+  "email": "info@duyts.nl",
+  "telephone": "+31206847475",
+  "vatID": null,
+  "identifier": { "@type": "PropertyValue", "name": "KvK", "value": "33228370" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Van Slingelandtstraat 28",
+    "postalCode": "1051 CH",
+    "addressLocality": "Amsterdam",
+    "addressCountry": "NL"
+  }
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main-content">Naar de inhoud</a>
+
+<!-- De header en het mobiele paneel staan bewust BUITEN #smooth-wrapper.
+     ScrollSmoother verschuift de inhoud met een transform, en onder een
+     transform hangt position:fixed aan dat element in plaats van aan het
+     scherm. Ze blijven daardoor ook staan bij een pagina-overgang; welke
+     menulink actief is wordt in page-transitions.js bijgewerkt. -->
+<header class="header header--scrolled" id="siteHeader">
+  <div class="header--container">
+    <a href="index.html" class="header--logo" aria-label="Duyts Bouwconstructies, naar de homepage">
+      <img class="header--logo-kleur" src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40">
+      <img class="header--logo-wit" src="assets/logo/duyts-logo-wit.png" alt="" aria-hidden="true" width="112" height="40">
+    </a>
+
+    <nav class="submenu" aria-label="Hoofdmenu">
+      <a class="submenu--link" href="index.html">Home</a>
+      <button type="button" class="submenu--link submenu--trigger" data-uitklap="werkzaamheden" aria-expanded="false" aria-controls="uitklap-werkzaamheden">Werkzaamheden<svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+      <button type="button" class="submenu--link is-actief submenu--trigger" data-uitklap="projecten" aria-expanded="false" aria-controls="uitklap-projecten">Projecten<svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+      <a class="submenu--link" href="offerte.html">Offerte</a>
+      <a class="submenu--link" href="over-ons.html">Over ons</a>
+      <a class="submenu--link" href="contact.html">Contact</a>
+      <a class="submenu--link highlight" href="contact.html">Contact</a>
+    </nav>
+
+    <button type="button" id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobilePanel">
+      Menu
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v2H2V5Zm0 6h20v2H2v-2Zm0 6h20v2H2v-2Z"/></svg>
+    </button>
+  </div>
+
+  <div class="uitklap" id="uitklap-werkzaamheden" data-uitklap-paneel="werkzaamheden" inert>
+    <div class="uitklap__inner">
+      <div class="uitklap__kolom">
+        <span class="subtitle">Werkzaamheden</span>
+        <ul class="uitklap__lijst" role="list">
+          <li><a class="uitklap__link" href="verbouwing.html"><span class="uitklap__naam">Verbouwing</span><span class="uitklap__uitleg">Bij een restauratie- en/of renovatieproject is een grote variëteit aan constructieve&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="fundering.html"><span class="uitklap__naam">Fundering</span><span class="uitklap__uitleg">Om de kwaliteit van een fundering te beoordelen is een funderingsonderzoek vereist. Wij&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="nieuwbouw.html"><span class="uitklap__naam">Nieuwbouw</span><span class="uitklap__uitleg">Bij Duyts ontwerpen wij de draagconstructies voor nieuwbouw aan de hand van het ontwerp van de&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="constructieberekening.html"><span class="uitklap__naam">Constructieberekening</span><span class="uitklap__uitleg">Een constructieberekening bevat een berekening van alle dragende delen van een constructie&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="stabiliteitsberekening.html"><span class="uitklap__naam">Stabiliteitsberekening</span><span class="uitklap__uitleg">Een stabiliteitsberekening is de constructieve toetsing van de weerstand van een gebouw tegen&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="schaderapportage.html"><span class="uitklap__naam">Schaderapportage en deskundigenadvies</span><span class="uitklap__uitleg">Door onze jarenlange ervaring met bouwconstructies hebben wij veel kennis over de oorzaken van&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="certificaat-funderingsherstel.html"><span class="uitklap__naam">Certificaat funderingsherstel</span><span class="uitklap__uitleg">Het Dutys funderingsherstel certificaat waarborgt de kwaliteit van advies en&hellip;</span></a></li>
+        </ul>
+      </div>
+      <div class="uitklap__kaart">
+        <picture><img src="assets/foto/duyts-dienst-constructieberekening-1100.webp" srcset="assets/foto/duyts-dienst-constructieberekening-640.webp 640w, assets/foto/duyts-dienst-constructieberekening-1100.webp 1100w" sizes="(max-width: 1199px) 0px, 40vw" width="1100" height="500" alt="" loading="lazy" decoding="async"></picture>
+        <span class="uitklap__sluier" aria-hidden="true"></span>
+        <div class="uitklap__kaart-tekst">
+          <p class="uitklap__kaart-kop">Weten wat uw project nodig heeft?</p>
+          <p class="uitklap__kaart-body">Vertel kort wat er verbouwd, hersteld of gebouwd wordt; we denken mee over de constructieve aanpak.</p>
+          <a href="offerte.html" class="button button--primary"><span class="button__inhoud">Vraag een offerte aan<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uitklap" id="uitklap-projecten" data-uitklap-paneel="projecten" inert>
+    <div class="uitklap__inner">
+      <div class="uitklap__kolom">
+        <span class="subtitle">Projecten</span>
+        <ul class="uitklap__lijst" role="list">
+          <li><a class="uitklap__link" href="projecten.html"><span class="uitklap__naam">Alle projecten</span><span class="uitklap__uitleg">Alles waar we aan hebben gerekend, op een rij</span></a></li>
+          <li><a class="uitklap__link" href="projecten.html#funderingsherstel"><span class="uitklap__naam">Funderingsherstel</span><span class="uitklap__uitleg">9 projecten</span></a></li>
+          <li><a class="uitklap__link" href="projecten.html#nieuwbouw"><span class="uitklap__naam">Nieuwbouw</span><span class="uitklap__uitleg">19 projecten</span></a></li>
+          <li><a class="uitklap__link" href="projecten.html#verbouwing"><span class="uitklap__naam">Verbouwing</span><span class="uitklap__uitleg">14 projecten</span></a></li>
+        </ul>
+      </div>
+      <div class="uitklap__kaart">
+        <picture><img src="assets/foto/duyts-project-kloveniersburgwal-1440.webp" srcset="assets/foto/duyts-project-kloveniersburgwal-480.webp 480w, assets/foto/duyts-project-kloveniersburgwal-800.webp 800w, assets/foto/duyts-project-kloveniersburgwal-1200.webp 1200w, assets/foto/duyts-project-kloveniersburgwal-1440.webp 1440w" sizes="(max-width: 1199px) 0px, 40vw" width="1440" height="2560" alt="" loading="lazy" decoding="async"></picture>
+        <span class="uitklap__sluier" aria-hidden="true"></span>
+        <div class="uitklap__kaart-tekst">
+          <p class="uitklap__kaart-kop">Van monument tot nieuwbouw</p>
+          <p class="uitklap__kaart-body">Restauraties, verbouwingen, funderingsherstel en volledige nieuwbouw, door het hele land.</p>
+          <a href="projecten.html" class="button button--primary"><span class="button__inhoud">Bekijk de projecten<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel--overlay" id="panelOverlay" hidden></div>
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-panel--topbar">
+    <a class="mobile-panel--chip" href="contact.html">Contact</a>
+    <button type="button" class="mobile-panel--chip is-close" id="panelSluit">
+      Sluiten
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4Z"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-panel--nav" aria-label="Hoofdmenu">
+    <span class="mobile-panel--label">Menu</span>
+    <ul class="mobile-panel--list" role="list">
+      <li><a class="mobile-panel--nav-link" href="index.html" data-panel-sluit style="transition-delay:0ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Home</span><span>Home</span></span></span></a></li>
+      <li>
+        <button type="button" class="mobile-panel--nav-link mobile-panel--nav-knop"
+                data-mobiel-uitklap="werkzaamheden" aria-expanded="false"
+                aria-controls="mobiel-werkzaamheden" style="transition-delay:60ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Werkzaamheden</span><span>Werkzaamheden</span></span></span><svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+        <ul class="mobile-panel--sublijst" id="mobiel-werkzaamheden" role="list" hidden>
+          <li><a class="mobile-panel--sublink" href="verbouwing.html" data-panel-sluit>Verbouwing</a></li>
+          <li><a class="mobile-panel--sublink" href="fundering.html" data-panel-sluit>Fundering</a></li>
+          <li><a class="mobile-panel--sublink" href="nieuwbouw.html" data-panel-sluit>Nieuwbouw</a></li>
+          <li><a class="mobile-panel--sublink" href="constructieberekening.html" data-panel-sluit>Constructieberekening</a></li>
+          <li><a class="mobile-panel--sublink" href="stabiliteitsberekening.html" data-panel-sluit>Stabiliteitsberekening</a></li>
+          <li><a class="mobile-panel--sublink" href="schaderapportage.html" data-panel-sluit>Schaderapportage en deskundigenadvies</a></li>
+          <li><a class="mobile-panel--sublink" href="certificaat-funderingsherstel.html" data-panel-sluit>Certificaat funderingsherstel</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mobile-panel--nav-link mobile-panel--nav-knop"
+                data-mobiel-uitklap="projecten" aria-expanded="false"
+                aria-controls="mobiel-projecten" style="transition-delay:120ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Projecten</span><span>Projecten</span></span></span><svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+        <ul class="mobile-panel--sublijst" id="mobiel-projecten" role="list" hidden>
+          <li><a class="mobile-panel--sublink" href="projecten.html" data-panel-sluit>Alle projecten</a></li>
+          <li><a class="mobile-panel--sublink" href="projecten.html#funderingsherstel" data-panel-sluit>Funderingsherstel</a></li>
+          <li><a class="mobile-panel--sublink" href="projecten.html#nieuwbouw" data-panel-sluit>Nieuwbouw</a></li>
+          <li><a class="mobile-panel--sublink" href="projecten.html#verbouwing" data-panel-sluit>Verbouwing</a></li>
+        </ul>
+      </li>
+      <li><a class="mobile-panel--nav-link" href="offerte.html" data-panel-sluit style="transition-delay:180ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Offerte</span><span>Offerte</span></span></span></a></li>
+      <li><a class="mobile-panel--nav-link" href="over-ons.html" data-panel-sluit style="transition-delay:240ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Over ons</span><span>Over ons</span></span></span></a></li>
+      <li><a class="mobile-panel--nav-link" href="contact.html" data-panel-sluit style="transition-delay:300ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Contact</span><span>Contact</span></span></span></a></li>
+    </ul>
+  </nav>
+  <div class="mobile-panel--cta button__mobile-width">
+    <a href="contact.html" class="button button--primary"><span class="button__inhoud">Bespreek uw project<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+  </div>
+</div>
+
+<div id="smooth-wrapper">
+<div id="smooth-content">
+
+<div data-barba="wrapper">
+<div class="app__wrapper" data-barba="container" data-barba-namespace="projecten">
+<div class="content__wrapper">
+
+<main id="main-content">
+
+  <section class="paginahero paginahero--patroon" id="s01-projecten">
+    <div class="paginahero__kop">
+      <span class="subtitle">Projecten</span>
+      <h1 class="paginahero__titel">Waar we aan hebben gerekend</h1>
+    </div>
+    <div class="paginahero__beeld" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 767px)" srcset="assets/patronen/hero-patroon-mobiel-720.webp 720w, assets/patronen/hero-patroon-mobiel-800.webp 800w, assets/patronen/hero-patroon-mobiel-1440.webp 1440w" sizes="100vw" width="1440" height="1440">
+        <img src="assets/patronen/hero-patroon-1440.webp" srcset="assets/patronen/hero-patroon-720.webp 720w, assets/patronen/hero-patroon-1000.webp 1000w, assets/patronen/hero-patroon-1440.webp 1440w" sizes="50vw" width="1440" height="940" alt="" loading="eager" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+  </section>
+
+  <section class="band background--white" id="s02-introductie">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-lg-8 col-12">
+          <h2 class="section-heading" style="margin:0 0 var(--space-500)">Van monumentrestauratie tot volledige nieuwbouw</h2>
+          <p class="case-lead">Restauraties, verbouwingen, funderingsherstel en nieuwbouw, door het hele land. Een project staat soms onder meer dan één categorie, omdat er in hetzelfde pand aan meerdere dingen tegelijk is gerekend.</p>
+          <p class="article-body" style="margin-top:var(--space-500)">
+            36 projecten: 9&times; funderingsherstel &middot; 19&times; nieuwbouw &middot; 14&times; verbouwing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases-overzicht" id="s03-projecten">
+    <div class="container">
+      <div class="cases-overzicht__filters">
+        <div class="filter-groep" role="group" aria-label="Filter projecten op categorie">
+          <button type="button" class="filter-pil is-actief" data-filter="categorie" data-waarde="alles" aria-pressed="true">
+            <svg class="filter-pil__vink" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 16.2 5.4 12l-1.4 1.4 5.6 5.6L20.4 8.2 19 6.8 9.6 16.2Z"/></svg><span>Alle projecten</span>
+          </button>
+          <button type="button" class="filter-pil" data-filter="categorie" data-waarde="funderingsherstel" aria-pressed="false">
+            <svg class="filter-pil__vink" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 16.2 5.4 12l-1.4 1.4 5.6 5.6L20.4 8.2 19 6.8 9.6 16.2Z"/></svg><span>Funderingsherstel</span>
+          </button>
+          <button type="button" class="filter-pil" data-filter="categorie" data-waarde="nieuwbouw" aria-pressed="false">
+            <svg class="filter-pil__vink" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 16.2 5.4 12l-1.4 1.4 5.6 5.6L20.4 8.2 19 6.8 9.6 16.2Z"/></svg><span>Nieuwbouw</span>
+          </button>
+          <button type="button" class="filter-pil" data-filter="categorie" data-waarde="verbouwing" aria-pressed="false">
+            <svg class="filter-pil__vink" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 16.2 5.4 12l-1.4 1.4 5.6 5.6L20.4 8.2 19 6.8 9.6 16.2Z"/></svg><span>Verbouwing</span>
+          </button>
+        </div>
+      </div>
+
+      <p class="cases-overzicht__telling" role="status" aria-live="polite"></p>
+
+      <div class="cases-overzicht__raster" id="caseRaster">
+        <article class="case-kaart" data-categorie="nieuwbouw funderingsherstel verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-artis.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-artis-1800.webp" srcset="assets/foto/duyts-project-artis-480.webp 480w, assets/foto/duyts-project-artis-800.webp 800w, assets/foto/duyts-project-artis-1200.webp 1200w, assets/foto/duyts-project-artis-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1200" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span><span class="case-kaart__label">Funderingsherstel</span><span class="case-kaart__label">Verbouwing</span><span class="case-kaart__label">Amsterdam</span></div>
+              <h2 class="case-kaart__titel">Artis</h2>
+              <p class="case-kaart__tekst">Wij werken al 20 jaar samen met Artis en zijn zeer betrokken bij grote en kleine projecten</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-bibliotheek-woerden.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-bibliotheek-woerden-897.webp" srcset="assets/foto/duyts-project-bibliotheek-woerden-480.webp 480w, assets/foto/duyts-project-bibliotheek-woerden-800.webp 800w, assets/foto/duyts-project-bibliotheek-woerden-897.webp 897w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="897" height="671" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span><span class="case-kaart__label">Woerden</span></div>
+              <h2 class="case-kaart__titel">Bibliotheek Woerden</h2>
+              <p class="case-kaart__tekst">Door DUYTS zijn voor de renovatie van de bibliotheek in Woerden de constructiveadviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-boerderij-amstel.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-boerderij-amstel-800.webp" srcset="assets/foto/duyts-project-boerderij-amstel-480.webp 480w, assets/foto/duyts-project-boerderij-amstel-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="600" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span><span class="case-kaart__label">Verbouwing</span><span class="case-kaart__label">Amsterdam</span></div>
+              <h2 class="case-kaart__titel">Boerderij Amstel</h2>
+              <p class="case-kaart__tekst">DUYTS heeft voor een boerderij aan de Amstel in Amsterdam de constructieadviezen voor de verbouwing en een nieuwbouw met de kelder uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-buitenveldert.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-buitenveldert-800.webp" srcset="assets/foto/duyts-project-buitenveldert-480.webp 480w, assets/foto/duyts-project-buitenveldert-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="450" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Buitenveldert</h2>
+              <p class="case-kaart__tekst">Voor een moderne villa in Amsterdam Buitenveldert heeft DUYTS de hoofddraagconstructie uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-charlotte-montpensierlaan.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-charlotte-montpensierlaan-1600.webp" srcset="assets/foto/duyts-project-charlotte-montpensierlaan-480.webp 480w, assets/foto/duyts-project-charlotte-montpensierlaan-800.webp 800w, assets/foto/duyts-project-charlotte-montpensierlaan-1200.webp 1200w, assets/foto/duyts-project-charlotte-montpensierlaan-1600.webp 1600w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1600" height="1066" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Charlotte Montpensierlaan</h2>
+              <p class="case-kaart__tekst">Duyts Bouwconstructies is de hoofdconstructeur van dit mooie nieuwbouw appartementencomplex</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="funderingsherstel">
+          <a class="case-kaart__link hover--icon" href="project-funderingsherstel-chassekerk.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-chassekerk-800.webp" srcset="assets/foto/duyts-project-chassekerk-480.webp 480w, assets/foto/duyts-project-chassekerk-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="600" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Funderingsherstel</span></div>
+              <h2 class="case-kaart__titel">Chass&eacute;kerk</h2>
+              <p class="case-kaart__tekst">In opdracht van Balko B.V. heeft DUYTS de constructieadviezen voor het funderingsherstel, de verbouwing en uitbreiding uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-cornelis-branderhorststraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-cornelis-branderhorststraat-800.webp" srcset="assets/foto/duyts-project-cornelis-branderhorststraat-480.webp 480w, assets/foto/duyts-project-cornelis-branderhorststraat-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="532" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Cornelis Branderhorststraat</h2>
+              <p class="case-kaart__tekst">Duyts heeft de constructieve adviezen voor de beton- en houtconstructie voor dit project uitgewerkt.</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing funderingsherstel">
+          <a class="case-kaart__link hover--icon" href="project-dam.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-dam-1800.webp" srcset="assets/foto/duyts-project-dam-480.webp 480w, assets/foto/duyts-project-dam-800.webp 800w, assets/foto/duyts-project-dam-1200.webp 1200w, assets/foto/duyts-project-dam-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1350" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span><span class="case-kaart__label">Funderingsherstel</span><span class="case-kaart__label">Amsterdam</span></div>
+              <h2 class="case-kaart__titel">Dam</h2>
+              <p class="case-kaart__tekst">Voor de verbouwing van een voormalig bankgebouw op de Dam in Amsterdam, zijn door DUYTS de constructieadviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-de-ruijterkade.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-de-ruijterkade-797.webp" srcset="assets/foto/duyts-project-de-ruijterkade-480.webp 480w, assets/foto/duyts-project-de-ruijterkade-797.webp 797w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="797" height="511" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">De Ruijterkade</h2>
+              <p class="case-kaart__tekst">Het monumentale pand gelegen is gerenoveerd en gerestaureerd. Duyts Bouwcontructies constructieve adviezen uitgewerkt voor het volledige funderingsherstel</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-duivendrechtsekade.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-duivendrechtsekade-1800.webp" srcset="assets/foto/duyts-project-duivendrechtsekade-480.webp 480w, assets/foto/duyts-project-duivendrechtsekade-800.webp 800w, assets/foto/duyts-project-duivendrechtsekade-1200.webp 1200w, assets/foto/duyts-project-duivendrechtsekade-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1350" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Duivendrechtsekade</h2>
+              <p class="case-kaart__tekst">In opdracht van Gerose Vastgoed Ontwikkeling BV heeft Duyts het constructieve ontwerp van het kantoorgebouw uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="funderingsherstel">
+          <a class="case-kaart__link hover--icon" href="project-emmastraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-emmastraat-797.webp" srcset="assets/foto/duyts-project-emmastraat-480.webp 480w, assets/foto/duyts-project-emmastraat-797.webp 797w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="797" height="428" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Funderingsherstel</span></div>
+              <h2 class="case-kaart__titel">Emmastraat</h2>
+              <p class="case-kaart__tekst">Op een voormalig kantoorpand zijn twee verdiepingen toegevoegd. Het volledige pand is op de nieuwe fundering opgevangen</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-fagelstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-fagelstraat-797.webp" srcset="assets/foto/duyts-project-fagelstraat-480.webp 480w, assets/foto/duyts-project-fagelstraat-797.webp 797w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="797" height="449" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Fagelstraat</h2>
+              <p class="case-kaart__tekst">Voor de nieuwbouw van het woon-zorgcomplex Fagel-Cats heeft DUYTS de totale constructieve adviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-haringpakkersteeg.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-haringpakkersteeg-800.webp" srcset="assets/foto/duyts-project-haringpakkersteeg-480.webp 480w, assets/foto/duyts-project-haringpakkersteeg-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="600" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">Haringpakkersteeg</h2>
+              <p class="case-kaart__tekst">Voor de stalen loopbruggen heeft DUYTS de constructieadviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-het-saentje.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-het-saentje-800.webp" srcset="assets/foto/duyts-project-het-saentje-480.webp 480w, assets/foto/duyts-project-het-saentje-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="533" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">Het Saentje</h2>
+              <p class="case-kaart__tekst">De voormalige bioscoop &ldquo;Het Saentje&rdquo; wordt verbouwd tot een appartementencomplex</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-het-waterschild-muiderslot.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-waterschild-muiderslot-1417.webp" srcset="assets/foto/duyts-project-waterschild-muiderslot-480.webp 480w, assets/foto/duyts-project-waterschild-muiderslot-800.webp 800w, assets/foto/duyts-project-waterschild-muiderslot-1200.webp 1200w, assets/foto/duyts-project-waterschild-muiderslot-1417.webp 1417w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1417" height="2048" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span><span class="case-kaart__label">Muiden</span></div>
+              <h2 class="case-kaart__titel">Het Waterschild, Muiderslot</h2>
+              <p class="case-kaart__tekst">In opdracht van de Stichting Rijksmuseum Muiderslot heeft DUYTS de constructieadviezen voor het Waterschild uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-ijburg.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-ijburg-729.webp" srcset="assets/foto/duyts-project-ijburg-480.webp 480w, assets/foto/duyts-project-ijburg-729.webp 729w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="729" height="485" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Ijburg</h2>
+              <p class="case-kaart__tekst">DUYTS heeft het constructief ontwerp verzorgd voor diverse woningen, vrijstaande villa&rsquo;s en een school</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="funderingsherstel">
+          <a class="case-kaart__link hover--icon" href="project-jan-luijkenstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-jan-luijkenstraat-1536.webp" srcset="assets/foto/duyts-project-jan-luijkenstraat-480.webp 480w, assets/foto/duyts-project-jan-luijkenstraat-800.webp 800w, assets/foto/duyts-project-jan-luijkenstraat-1200.webp 1200w, assets/foto/duyts-project-jan-luijkenstraat-1536.webp 1536w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1536" height="2048" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Funderingsherstel</span></div>
+              <h2 class="case-kaart__titel">Jan Luijkenstraat</h2>
+              <p class="case-kaart__tekst">In opdracht van een ontwikkelaar heeft Duyts constructieve adviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-kerktoren.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-kerktoren-783.webp" srcset="assets/foto/duyts-project-kerktoren-480.webp 480w, assets/foto/duyts-project-kerktoren-783.webp 783w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="783" height="535" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">Kerktoren</h2>
+              <p class="case-kaart__tekst">In opdracht van de aannemer, Bouwbedrijf Selie BV, heeft DUYTS het ontwerp van de stutconstructie verzorgd</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-kloveniersburgwal.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-kloveniersburgwal-1440.webp" srcset="assets/foto/duyts-project-kloveniersburgwal-480.webp 480w, assets/foto/duyts-project-kloveniersburgwal-800.webp 800w, assets/foto/duyts-project-kloveniersburgwal-1200.webp 1200w, assets/foto/duyts-project-kloveniersburgwal-1440.webp 1440w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1440" height="2560" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">Kloveniersburgwal</h2>
+              <p class="case-kaart__tekst">De voormalige Evangelisch-Lutherse kerk heeft een nieuwe bestemming gekregen als kantoorruimte</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-rhoneweg-makerstoren.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-dienst-kantoorgebouwen-1920.webp" srcset="assets/foto/duyts-dienst-kantoorgebouwen-640.webp 640w, assets/foto/duyts-dienst-kantoorgebouwen-1200.webp 1200w, assets/foto/duyts-dienst-kantoorgebouwen-1800.webp 1800w, assets/foto/duyts-dienst-kantoorgebouwen-1920.webp 1920w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1920" height="2560" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Makerstoren &ndash; Rhoneweg</h2>
+              <p class="case-kaart__tekst">De Makerstoren gelegen aan de Rhoneweg is momenteel nog in aanbouw. Duyts Bouwconstructies is van dit project de hoofdconstructeur.</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-minervalaan-2.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-minervalaan-793.webp" srcset="assets/foto/duyts-project-minervalaan-480.webp 480w, assets/foto/duyts-project-minervalaan-793.webp 793w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="793" height="426" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Minervalaan</h2>
+              <p class="case-kaart__tekst">Voor deze woonvilla in Amsterdam-Zuid heeft DUYTS de volledige draagconstructie voor het totale project uitgedacht</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-molukkenstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-molukkenstraat-1800.webp" srcset="assets/foto/duyts-project-molukkenstraat-480.webp 480w, assets/foto/duyts-project-molukkenstraat-800.webp 800w, assets/foto/duyts-project-molukkenstraat-1200.webp 1200w, assets/foto/duyts-project-molukkenstraat-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1200" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">Molukkenstraat</h2>
+              <p class="case-kaart__tekst">Duyts Bouwconstructies heeft in opdracht van Kroonenberg Groep BV constructieve adviezen uit te weken voor dit project</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-oranje-nassaulaan.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-oranje-nassaulaan-1536.webp" srcset="assets/foto/duyts-project-oranje-nassaulaan-480.webp 480w, assets/foto/duyts-project-oranje-nassaulaan-800.webp 800w, assets/foto/duyts-project-oranje-nassaulaan-1200.webp 1200w, assets/foto/duyts-project-oranje-nassaulaan-1536.webp 1536w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1536" height="2048" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Oranje Nassaulaan</h2>
+              <p class="case-kaart__tekst">Dit voormalige kantoor op een prominente locatie in Amsterdam Zuid is gesloopt. Er is een luxe appartementencomplex gerealiseerd.</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="funderingsherstel">
+          <a class="case-kaart__link hover--icon" href="project-p-c-hooftstraat-2.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-p-c-hooftstraat-2-1800.webp" srcset="assets/foto/duyts-project-p-c-hooftstraat-2-480.webp 480w, assets/foto/duyts-project-p-c-hooftstraat-2-800.webp 800w, assets/foto/duyts-project-p-c-hooftstraat-2-1200.webp 1200w, assets/foto/duyts-project-p-c-hooftstraat-2-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="2400" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Funderingsherstel</span></div>
+              <h2 class="case-kaart__titel">P.C. Hooftstraat</h2>
+              <p class="case-kaart__tekst">Voor deze winkelketen heeft Duyts Bouwconstructies constructief geadviseerd voor de gehele fundering inclusief de kelderbak</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-p-c-hooftstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-p-c-hooftstraat-800.webp" srcset="assets/foto/duyts-project-p-c-hooftstraat-480.webp 480w, assets/foto/duyts-project-p-c-hooftstraat-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="600" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">P.C. Hooftstraat</h2>
+              <p class="case-kaart__tekst">In opdracht van Overvast bv is Duyts Bouwconstructies BV in 2017 gestart met het uitwerken van de constructieve adviezen voor de verbouwing</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-prinsengracht.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-prinsengracht-1800.webp" srcset="assets/foto/duyts-project-prinsengracht-480.webp 480w, assets/foto/duyts-project-prinsengracht-800.webp 800w, assets/foto/duyts-project-prinsengracht-1200.webp 1200w, assets/foto/duyts-project-prinsengracht-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="2400" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">Prinsengracht</h2>
+              <p class="case-kaart__tekst">Voor een pand aan de Prinsengracht in Amsterdam zijn door DUYTS de constructieadviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="verbouwing funderingsherstel">
+          <a class="case-kaart__link hover--icon" href="project-prinses-margrietstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-prinses-margrietstraat-1536.webp" srcset="assets/foto/duyts-project-prinses-margrietstraat-480.webp 480w, assets/foto/duyts-project-prinses-margrietstraat-800.webp 800w, assets/foto/duyts-project-prinses-margrietstraat-1200.webp 1200w, assets/foto/duyts-project-prinses-margrietstraat-1536.webp 1536w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1536" height="2048" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Verbouwing</span><span class="case-kaart__label">Funderingsherstel</span></div>
+              <h2 class="case-kaart__titel">Prinses Margrietstraat</h2>
+              <p class="case-kaart__tekst">Onder de villa in de Prinses Margrietstraat in Amsterdam-Buitenveldert is een complete kelder gebouwd</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="content-nodig">
+          <a class="case-kaart__link hover--icon" href="project-schade-rapportage.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-schade-rapportage-1800.webp" srcset="assets/foto/duyts-project-schade-rapportage-480.webp 480w, assets/foto/duyts-project-schade-rapportage-800.webp 800w, assets/foto/duyts-project-schade-rapportage-1200.webp 1200w, assets/foto/duyts-project-schade-rapportage-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1350" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">[CONTENT NODIG]</span></div>
+              <h2 class="case-kaart__titel">Schade Rapportage</h2>
+              <p class="case-kaart__tekst">Dankzij onze ruime ervaring worden wij regelmatig ingeschakeld bij schadesituaties</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-school-ijsselmeerstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-school-ijsselmeerstraat-800.webp" srcset="assets/foto/duyts-project-school-ijsselmeerstraat-480.webp 480w, assets/foto/duyts-project-school-ijsselmeerstraat-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="600" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">School Ijsselmeerstraat</h2>
+              <p class="case-kaart__tekst">Voor de nieuwbouw van een school aan de IJsselmeerstraat in Huizen, zijn door DUYTS de constructieadviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-smederij.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-smederij-1800.webp" srcset="assets/foto/duyts-project-smederij-480.webp 480w, assets/foto/duyts-project-smederij-800.webp 800w, assets/foto/duyts-project-smederij-1200.webp 1200w, assets/foto/duyts-project-smederij-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1350" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span><span class="case-kaart__label">Amstelveen</span></div>
+              <h2 class="case-kaart__titel">Smederij</h2>
+              <p class="case-kaart__tekst">In opdracht van Vast Food BV heeft DUYTS de constructie-adviezen voor de verbouwing en uitbreiding van een bedrijfsgebouw uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-stadsvilla-amstelveen.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-stadsvilla-amstelveen-800.webp" srcset="assets/foto/duyts-project-stadsvilla-amstelveen-480.webp 480w, assets/foto/duyts-project-stadsvilla-amstelveen-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="533" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span><span class="case-kaart__label">Amstelveen</span></div>
+              <h2 class="case-kaart__titel">Stadsvilla Amstelveen</h2>
+              <p class="case-kaart__tekst">Voor deze Stadsvilla aan de rand van Amstelveen heeft Duyts Bouwconstructies BV de constructieve adviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="funderingsherstel verbouwing">
+          <a class="case-kaart__link hover--icon" href="project-stadsvilla-amsterdam.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-stadsvilla-amsterdam-1800.webp" srcset="assets/foto/duyts-project-stadsvilla-amsterdam-480.webp 480w, assets/foto/duyts-project-stadsvilla-amsterdam-800.webp 800w, assets/foto/duyts-project-stadsvilla-amsterdam-1200.webp 1200w, assets/foto/duyts-project-stadsvilla-amsterdam-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1350" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Funderingsherstel</span><span class="case-kaart__label">Verbouwing</span></div>
+              <h2 class="case-kaart__titel">Stadsvilla Amsterdam</h2>
+              <p class="case-kaart__tekst">Duyts Bouwconstructies heeft voor een karakteristieke stadsvilla in Amsterdam-Zuid constructieve adviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-tweede-van-swindenstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-tweede-van-swindenstraat-800.webp" srcset="assets/foto/duyts-project-tweede-van-swindenstraat-480.webp 480w, assets/foto/duyts-project-tweede-van-swindenstraat-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="600" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Tweede van Swindenstraat</h2>
+              <p class="case-kaart__tekst">In opdracht van een woningbouwvereniging heeft DUYTS de constructieve adviezen voor nieuwbouw panden uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-valeriusplein.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-valeriusplein-800.webp" srcset="assets/foto/duyts-project-valeriusplein-480.webp 480w, assets/foto/duyts-project-valeriusplein-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="800" height="373" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Valeriusplein</h2>
+              <p class="case-kaart__tekst">Duyts Bouwconstructies B.V. heeft voor een bijzonder hoogwaardig gebouw in Amsterdam Zuid de constructieve adviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="nieuwbouw">
+          <a class="case-kaart__link hover--icon" href="project-van-eeghenstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-van-eeghenstraat-1800.webp" srcset="assets/foto/duyts-project-van-eeghenstraat-480.webp 480w, assets/foto/duyts-project-van-eeghenstraat-800.webp 800w, assets/foto/duyts-project-van-eeghenstraat-1200.webp 1200w, assets/foto/duyts-project-van-eeghenstraat-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1350" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Nieuwbouw</span></div>
+              <h2 class="case-kaart__titel">Van Eeghenstraat</h2>
+              <p class="case-kaart__tekst">Duyts Bouwconstructies heeft voor dit High-End appartementencomplex alle constructieve adviezen uitgewerkt</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="case-kaart" data-categorie="funderingsherstel">
+          <a class="case-kaart__link hover--icon" href="project-willem-kesstraat.html">
+            <figure class="case-kaart__beeld">
+              <picture><img src="assets/foto/duyts-project-willem-kesstraat-1800.webp" srcset="assets/foto/duyts-project-willem-kesstraat-480.webp 480w, assets/foto/duyts-project-willem-kesstraat-800.webp 800w, assets/foto/duyts-project-willem-kesstraat-1200.webp 1200w, assets/foto/duyts-project-willem-kesstraat-1800.webp 1800w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw" width="1800" height="1350" alt="" loading="lazy" decoding="async"></picture>
+            </figure>
+            <div class="case-kaart__inhoud">
+              <div class="case-kaart__meta"><span class="case-kaart__label">Funderingsherstel</span></div>
+              <h2 class="case-kaart__titel">Willem Kesstraat</h2>
+              <p class="case-kaart__tekst">Duyts heeft het constructieve ontwerp uitgewerkt en opdracht voor de begeleiding tijdens het bouwproces</p>
+              <div class="case-kaart__voet">
+                <span class="case-kaart__lees">Bekijk het project</span>
+                <span class="button--icon  button--secundair" aria-hidden="true" inert><span class="button--circle"><span class="circle-container"><svg class="arrow--animation is-1" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <p class="cases-overzicht__leeg" hidden>Geen projecten in deze categorie. Zet het filter terug op &lsquo;alle projecten&rsquo;.</p>
+    </div>
+  </section>
+
+  <section class="logo-slider" id="s04-opdrachtgevers" aria-label="Voor wie wij werken" data-logoband>
+    <div class="logo-slider__venster">
+      <div class="logo-slider__spoor">
+        <ul class="logo-slider__set">
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="Alstom" width="408" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="Ballast Nedam" width="452" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="Bilfinger" width="210" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="Cosun Beet Company" width="345" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="Ebert Hera" width="389" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="Electrabel" width="203" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="Freesmij" width="309" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="GE Vernova" width="362" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="Huhtamaki" width="478" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="Ivens" width="237" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="Ooms Bouw &amp; Ontwikkeling" width="248" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="Stork" width="197" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="TES Industrial Systems" width="160" height="80" decoding="async"></li>
+        </ul>
+        <ul class="logo-slider__set" aria-hidden="true">
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="" width="408" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="" width="452" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="" width="210" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="" width="345" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="" width="389" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="" width="203" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="" width="309" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="" width="362" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="" width="478" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="" width="237" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="" width="248" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="" width="197" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="" width="160" height="80" decoding="async"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-slot" id="s05-contact">
+    <div class="container">
+      <div class="cta-slot__hoofd">
+        <span class="subtitle cta-slot__label">Contact</span>
+        <h2 class="cta-slot__kop">Een vergelijkbaar project?</h2>
+        <p class="cta-slot__tekst">Vertel kort wat er speelt. Wij kijken of we hetzelfde voor u kunnen doen.</p>
+        <div class="cta-slot__actie">
+          <a href="offerte.html" class="button button--primary"><span class="button__inhoud">Vraag een offerte aan<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+          <a href="contact.html" class="button button--secondary"><span class="button__inhoud">Bespreek uw project<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer--widgets">
+      <div class="row footer--gap">
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <img src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40" style="margin-bottom:var(--space-500)">
+          <p class="footer--intro">Constructieve adviezen voor verbouwing, funderingsherstel en nieuwbouw. Sinds 1981 vanuit Amsterdam, door het hele land.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <h4>Werkzaamheden</h4>
+          <ul role="list">
+            <li><a href="verbouwing.html">Verbouwing</a></li>
+            <li><a href="fundering.html">Fundering</a></li>
+            <li><a href="nieuwbouw.html">Nieuwbouw</a></li>
+            <li><a href="constructieberekening.html">Constructieberekening</a></li>
+            <li><a href="stabiliteitsberekening.html">Stabiliteitsberekening</a></li>
+            <li><a href="schaderapportage.html">Schaderapportage en deskundigenadvies</a></li>
+            <li><a href="certificaat-funderingsherstel.html">Certificaat funderingsherstel</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <h4>Projecten</h4>
+          <ul role="list">
+            <li><a href="projecten.html#funderingsherstel">Funderingsherstel</a></li>
+            <li><a href="projecten.html#nieuwbouw">Nieuwbouw</a></li>
+            <li><a href="projecten.html#verbouwing">Verbouwing</a></li>
+            <li><a href="werkwijze.html">Werkwijze</a></li>
+            <li><a href="vacatures.html">Vacatures</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li><a href="tel:+31206847475">020-6847475</a></li>
+            <li><a href="mailto:info@duyts.nl">info@duyts.nl</a></li>
+          </ul>
+          <p class="footer--adres">Van Slingelandtstraat 28<br>1051 CH Amsterdam<br>KvK 33228370</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer--line"></div>
+    <div class="footer--copyright">
+      <span>&copy; Duyts Bouwconstructies B.V.</span>
+      <a href="privacybeleid.html">Privacybeleid</a>
+      <a href="cookies.html">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js?v=f105a2ab"></script>
+<script src="contactformulier.js?v=2634c28d"></script>
+<script src="cases.js?v=5c87cc79"></script>
+</div><!-- /.content__wrapper -->
+</div><!-- /[data-barba=container] -->
+</div><!-- /[data-barba=wrapper] -->
+
+</div><!-- /#smooth-content -->
+</div><!-- /#smooth-wrapper -->
+
+<!-- ================= COOKIEMELDING ================= -->
+<aside id="cookiebalk" class="cookiebalk" hidden aria-label="Cookiemelding">
+  <h2>Cookie-instellingen</h2>
+  <p>Deze site plaatst alleen wat nodig is om hem te laten werken. Zet je analytische cookies aan, dan help je ons te zien wat werkt en wat niet. Lees het <a href="cookies.html">cookiebeleid</a>.</p>
+
+  <div id="cookieKeuzes" class="cookie-keuzes" hidden>
+    <div class="cookie-optie">
+      <label class="cookie-schakelaar">
+        <input type="checkbox" checked disabled aria-label="Functionele cookies, altijd aan">
+        <span aria-hidden="true"></span>
+      </label>
+      <div>
+        <span class="cookie-optie-naam">Functioneel</span>
+        <p>Nodig om de site te laten werken. Staat altijd aan.</p>
+      </div>
+    </div>
+    <div class="cookie-optie">
+      <label class="cookie-schakelaar">
+        <input type="checkbox" id="cookieAnalytisch" aria-label="Analytische cookies">
+        <span aria-hidden="true"></span>
+      </label>
+      <div>
+        <span class="cookie-optie-naam">Analytisch</span>
+        <p>Laat ons zien welke pagina&rsquo;s bezocht worden, zodat we de site kunnen verbeteren.</p>
+      </div>
+    </div>
+    <div class="cookie-optie">
+      <label class="cookie-schakelaar">
+        <input type="checkbox" id="cookieMarketing" aria-label="Marketingcookies">
+        <span aria-hidden="true"></span>
+      </label>
+      <div>
+        <span class="cookie-optie-naam">Marketing</span>
+        <p>Voor advertenties en het meten daarvan. Nu niet in gebruik.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cookie-knoppen">
+    <button type="button" class="cookie-knop" data-cookie="weigeren">Weigeren</button>
+    <button type="button" class="cookie-knop" data-cookie="aanpassen">Aanpassen</button>
+    <button type="button" class="cookie-knop cookie-knop--donker" data-cookie="toestaan">Toestaan</button>
+  </div>
+</aside>
+
+<!-- ================= PAGINA-OVERGANGEN =================
+     Barba wisselt alleen de container hierboven om, GSAP animeert de wissel. -->
+<!-- defer: de browser haalt ze op terwijl hij de pagina nog aan het ontleden is
+     en voert ze daarna uit, in deze volgorde. Die volgorde is nodig, want
+     ScrollTrigger heeft gsap nodig en page-transitions.js heeft Barba nodig. -->
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js"></script>
+<script defer src="cookiebalk.js?v=76872ba6"></script>
+<script defer src="analytics.js?v=47e6b63a"></script>
+<script defer src="smooth-scroll.js?v=6b5f0d26"></script>
+<script defer src="page-transitions.js?v=9fe9bce8"></script>
+
+</body>
+</html>

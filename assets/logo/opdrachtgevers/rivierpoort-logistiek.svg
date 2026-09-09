@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Voorlopig woordmerk voor een verzonnen opdrachtgever. Geen echt logo.
+     Zie CONTENT-TODO.md: wordt vervangen zodra er echte getuigenissen met
+     toestemming zijn. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="317" height="80"
+     viewBox="0 0 317 80" role="img" aria-label="RIVIERPOORT LOGISTIEK">
+  <text x="0" y="38" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="34" font-weight="700" letter-spacing="0.5" fill="#5c5c5c">RIVIERPOORT</text>
+  <text x="2" y="62" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="400" letter-spacing="1.5" fill="#8a8a8a">L O G I S T I E K</text>
+</svg>

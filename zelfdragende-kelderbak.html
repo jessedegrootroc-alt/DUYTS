@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zelfdragende kelderbak - DUYTS BOUWCONSTRUCTIES BV</title>
+<meta name="description" content="Een zelfdragende kelderbak is een prefab kelder die in zijn geheel uit beton wordt vervaardigd, getransporteerd en als één stuk geplaatst wordt." />
+<link rel="canonical" href="https://www.duyts.nl/zelfdragende-kelderbak.html" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Duyts Bouwconstructies B.V." />
+<meta name="theme-color" content="#FFFFFF" />
+<meta name="color-scheme" content="light" />
+
+<!-- GSAP en Barba komen van jsDelivr. Het opzetten van die verbinding (dns,
+     tcp, tls) kost op een telefoon een paar honderd ms en begint nu al terwijl
+     de HTML nog binnenkomt, in plaats van pas onderaan de pagina. -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+<!-- Het lettertype staat in de kop van de pagina en is dus onderdeel van de
+     LCP. Zonder preload vindt de browser het pas nadat styleguide.css binnen is
+     en ontleed is. crossorigin moet erbij, ook al staat het bestand op dezelfde
+     server: een font wordt altijd in CORS-modus opgehaald, en zonder dat woord
+     haalt de browser het twee keer op. -->
+<link rel="preload" href="assets/fonts/assistant-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="stylesheet" href="styleguide.css?v=424acdcc" />
+<link rel="stylesheet" href="transitions.css?v=af37e0f4" />
+<!-- De cookiebalk verschijnt pas als cookiebalk.js hem opbouwt, dus zijn stijl
+     hoeft de eerste weergave niet op te houden. media="print" laat de browser
+     hem buiten het kritieke pad ophalen; onload zet hem daarna alsnog aan. De
+     noscript-regel vangt op dat zonder JavaScript ook die onload niet afgaat. -->
+<link rel="stylesheet" href="cookiebalk.css?v=16254147" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="cookiebalk.css?v=16254147" /></noscript>
+<link rel="stylesheet" href="service.css?v=e4706cbf" data-page-css="service" />
+
+<link rel="icon" href="assets/favicon/duyts-favicon.ico" sizes="16x16 32x32 48x48" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/duyts-favicon-32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/duyts-favicon-192.png" />
+<link rel="apple-touch-icon" href="assets/favicon/duyts-apple-touch-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Duyts Bouwconstructies BV" />
+<meta property="og:locale" content="nl_NL" />
+<meta property="og:url" content="https://www.duyts.nl/zelfdragende-kelderbak.html" />
+<meta property="og:title" content="Zelfdragende kelderbak - DUYTS BOUWCONSTRUCTIES BV" />
+<meta property="og:description" content="Een zelfdragende kelderbak is een prefab kelder die in zijn geheel uit beton wordt vervaardigd, getransporteerd en als één stuk geplaatst wordt." />
+<meta property="og:image" content="https://www.duyts.nl/assets/social/duyts-deelafbeelding.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Duyts Bouwconstructies BV: constructieve adviezen sinds 1981" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.duyts.nl/assets/social/duyts-deelafbeelding.png" />
+<meta name="twitter:title" content="Zelfdragende kelderbak - DUYTS BOUWCONSTRUCTIES BV" />
+<meta name="twitter:description" content="Een zelfdragende kelderbak is een prefab kelder die in zijn geheel uit beton wordt vervaardigd, getransporteerd en als één stuk geplaatst wordt." />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Duyts Bouwconstructies B.V.",
+  "alternateName": "Duyts Bouwconstructies BV",
+  "foundingDate": "1981",
+  "url": "https://www.duyts.nl/",
+  "logo": "https://www.duyts.nl/assets/logo/duyts-logo.png",
+  "email": "info@duyts.nl",
+  "telephone": "+31206847475",
+  "vatID": null,
+  "identifier": { "@type": "PropertyValue", "name": "KvK", "value": "33228370" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Van Slingelandtstraat 28",
+    "postalCode": "1051 CH",
+    "addressLocality": "Amsterdam",
+    "addressCountry": "NL"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Zelfdragende kelderbak",
+  "name": "Zelfdragende kelderbak",
+  "description": "Een zelfdragende kelderbak is een prefab kelder die in zijn geheel uit beton wordt vervaardigd, getransporteerd en als één stuk geplaatst wordt.",
+  "areaServed": "NL",
+  "provider": {
+    "@type": "Organization",
+    "name": "Duyts Bouwconstructies B.V."
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is er een vergunning nodig voor het plaatsen van een kelderbak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor het plaatsen van een prefab kelder (onder een woning of in de tuin) is in vrijwel altijd een omgevingsvergunning van de gemeente vereist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet mijn pand op de schop voor onderzoek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Voor de beoordeling graven we een inspectieput, meestal aan de binnenzijde bij een bouwmuur. Dat is lokaal werk; het pand blijft in gebruik. De put wordt na het onderzoek weer dichtgemaakt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ik wil mijn pand splitsen in appartementsrechten. Wat is er nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bij splitsing moet u aantonen dat de fundering nog minimaal 25 jaar onderhoudsvrij is, kwaliteitsklasse code 2. Daarvoor is een funderingsonderzoek veelal vereist. Wij voeren dit soort onderzoeken regelmatig uit, juist voor die reden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt u samen met mijn architect en aannemer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, en het liefst vanaf het begin. We werken nauw samen met opdrachtgevers, architecten, aannemers en andere adviseurs, en kijken verder dan de vraag op papier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kunnen jullie starten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat verschilt per periode en per opdracht. In de offerte vermelden wij binnen welke termijn wij kunnen starten, welke werkzaamheden wij hebben ingeschat en welke aanvullende gegevens er nog nodig zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Op welke voorwaarden werken jullie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor al onze opdrachten hanteren wij de DNR 2011, die we standaard meesturen met de offerte. Die regeling beschrijft de rechtsverhouding tussen opdrachtgever, architect, ingenieur en adviseur. Voor al onze advieswerkzaamheden hebben wij een beroepsaansprakelijkheidsverzekering afgesloten."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main-content">Naar de inhoud</a>
+
+<!-- De header en het mobiele paneel staan bewust BUITEN #smooth-wrapper.
+     ScrollSmoother verschuift de inhoud met een transform, en onder een
+     transform hangt position:fixed aan dat element in plaats van aan het
+     scherm. Ze blijven daardoor ook staan bij een pagina-overgang; welke
+     menulink actief is wordt in page-transitions.js bijgewerkt. -->
+<header class="header header--scrolled" id="siteHeader">
+  <div class="header--container">
+    <a href="index.html" class="header--logo" aria-label="Duyts Bouwconstructies, naar de homepage">
+      <img class="header--logo-kleur" src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40">
+      <img class="header--logo-wit" src="assets/logo/duyts-logo-wit.png" alt="" aria-hidden="true" width="112" height="40">
+    </a>
+
+    <nav class="submenu" aria-label="Hoofdmenu">
+      <a class="submenu--link" href="index.html">Home</a>
+      <button type="button" class="submenu--link submenu--trigger" data-uitklap="werkzaamheden" aria-expanded="false" aria-controls="uitklap-werkzaamheden">Werkzaamheden<svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+      <button type="button" class="submenu--link submenu--trigger" data-uitklap="projecten" aria-expanded="false" aria-controls="uitklap-projecten">Projecten<svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+      <a class="submenu--link" href="offerte.html">Offerte</a>
+      <a class="submenu--link" href="over-ons.html">Over ons</a>
+      <a class="submenu--link" href="contact.html">Contact</a>
+      <a class="submenu--link highlight" href="contact.html">Contact</a>
+    </nav>
+
+    <button type="button" id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobilePanel">
+      Menu
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v2H2V5Zm0 6h20v2H2v-2Zm0 6h20v2H2v-2Z"/></svg>
+    </button>
+  </div>
+
+  <div class="uitklap" id="uitklap-werkzaamheden" data-uitklap-paneel="werkzaamheden" inert>
+    <div class="uitklap__inner">
+      <div class="uitklap__kolom">
+        <span class="subtitle">Werkzaamheden</span>
+        <ul class="uitklap__lijst" role="list">
+          <li><a class="uitklap__link" href="verbouwing.html"><span class="uitklap__naam">Verbouwing</span><span class="uitklap__uitleg">Bij een restauratie- en/of renovatieproject is een grote variëteit aan constructieve&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="fundering.html"><span class="uitklap__naam">Fundering</span><span class="uitklap__uitleg">Om de kwaliteit van een fundering te beoordelen is een funderingsonderzoek vereist. Wij&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="nieuwbouw.html"><span class="uitklap__naam">Nieuwbouw</span><span class="uitklap__uitleg">Bij Duyts ontwerpen wij de draagconstructies voor nieuwbouw aan de hand van het ontwerp van de&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="constructieberekening.html"><span class="uitklap__naam">Constructieberekening</span><span class="uitklap__uitleg">Een constructieberekening bevat een berekening van alle dragende delen van een constructie&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="stabiliteitsberekening.html"><span class="uitklap__naam">Stabiliteitsberekening</span><span class="uitklap__uitleg">Een stabiliteitsberekening is de constructieve toetsing van de weerstand van een gebouw tegen&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="schaderapportage.html"><span class="uitklap__naam">Schaderapportage en deskundigenadvies</span><span class="uitklap__uitleg">Door onze jarenlange ervaring met bouwconstructies hebben wij veel kennis over de oorzaken van&hellip;</span></a></li>
+          <li><a class="uitklap__link" href="certificaat-funderingsherstel.html"><span class="uitklap__naam">Certificaat funderingsherstel</span><span class="uitklap__uitleg">Het Dutys funderingsherstel certificaat waarborgt de kwaliteit van advies en&hellip;</span></a></li>
+        </ul>
+      </div>
+      <div class="uitklap__kaart">
+        <picture><img src="assets/foto/duyts-dienst-constructieberekening-1100.webp" srcset="assets/foto/duyts-dienst-constructieberekening-640.webp 640w, assets/foto/duyts-dienst-constructieberekening-1100.webp 1100w" sizes="(max-width: 1199px) 0px, 40vw" width="1100" height="500" alt="" loading="lazy" decoding="async"></picture>
+        <span class="uitklap__sluier" aria-hidden="true"></span>
+        <div class="uitklap__kaart-tekst">
+          <p class="uitklap__kaart-kop">Weten wat uw project nodig heeft?</p>
+          <p class="uitklap__kaart-body">Vertel kort wat er verbouwd, hersteld of gebouwd wordt; we denken mee over de constructieve aanpak.</p>
+          <a href="offerte.html" class="button button--primary"><span class="button__inhoud">Vraag een offerte aan<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uitklap" id="uitklap-projecten" data-uitklap-paneel="projecten" inert>
+    <div class="uitklap__inner">
+      <div class="uitklap__kolom">
+        <span class="subtitle">Projecten</span>
+        <ul class="uitklap__lijst" role="list">
+          <li><a class="uitklap__link" href="projecten.html"><span class="uitklap__naam">Alle projecten</span><span class="uitklap__uitleg">Alles waar we aan hebben gerekend, op een rij</span></a></li>
+          <li><a class="uitklap__link" href="projecten.html#funderingsherstel"><span class="uitklap__naam">Funderingsherstel</span><span class="uitklap__uitleg">9 projecten</span></a></li>
+          <li><a class="uitklap__link" href="projecten.html#nieuwbouw"><span class="uitklap__naam">Nieuwbouw</span><span class="uitklap__uitleg">19 projecten</span></a></li>
+          <li><a class="uitklap__link" href="projecten.html#verbouwing"><span class="uitklap__naam">Verbouwing</span><span class="uitklap__uitleg">14 projecten</span></a></li>
+        </ul>
+      </div>
+      <div class="uitklap__kaart">
+        <picture><img src="assets/foto/duyts-project-kloveniersburgwal-1440.webp" srcset="assets/foto/duyts-project-kloveniersburgwal-480.webp 480w, assets/foto/duyts-project-kloveniersburgwal-800.webp 800w, assets/foto/duyts-project-kloveniersburgwal-1200.webp 1200w, assets/foto/duyts-project-kloveniersburgwal-1440.webp 1440w" sizes="(max-width: 1199px) 0px, 40vw" width="1440" height="2560" alt="" loading="lazy" decoding="async"></picture>
+        <span class="uitklap__sluier" aria-hidden="true"></span>
+        <div class="uitklap__kaart-tekst">
+          <p class="uitklap__kaart-kop">Van monument tot nieuwbouw</p>
+          <p class="uitklap__kaart-body">Restauraties, verbouwingen, funderingsherstel en volledige nieuwbouw, door het hele land.</p>
+          <a href="projecten.html" class="button button--primary"><span class="button__inhoud">Bekijk de projecten<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel--overlay" id="panelOverlay" hidden></div>
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-panel--topbar">
+    <a class="mobile-panel--chip" href="contact.html">Contact</a>
+    <button type="button" class="mobile-panel--chip is-close" id="panelSluit">
+      Sluiten
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4Z"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-panel--nav" aria-label="Hoofdmenu">
+    <span class="mobile-panel--label">Menu</span>
+    <ul class="mobile-panel--list" role="list">
+      <li><a class="mobile-panel--nav-link" href="index.html" data-panel-sluit style="transition-delay:0ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Home</span><span>Home</span></span></span></a></li>
+      <li>
+        <button type="button" class="mobile-panel--nav-link mobile-panel--nav-knop"
+                data-mobiel-uitklap="werkzaamheden" aria-expanded="false"
+                aria-controls="mobiel-werkzaamheden" style="transition-delay:60ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Werkzaamheden</span><span>Werkzaamheden</span></span></span><svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+        <ul class="mobile-panel--sublijst" id="mobiel-werkzaamheden" role="list" hidden>
+          <li><a class="mobile-panel--sublink" href="verbouwing.html" data-panel-sluit>Verbouwing</a></li>
+          <li><a class="mobile-panel--sublink" href="fundering.html" data-panel-sluit>Fundering</a></li>
+          <li><a class="mobile-panel--sublink" href="nieuwbouw.html" data-panel-sluit>Nieuwbouw</a></li>
+          <li><a class="mobile-panel--sublink" href="constructieberekening.html" data-panel-sluit>Constructieberekening</a></li>
+          <li><a class="mobile-panel--sublink" href="stabiliteitsberekening.html" data-panel-sluit>Stabiliteitsberekening</a></li>
+          <li><a class="mobile-panel--sublink" href="schaderapportage.html" data-panel-sluit>Schaderapportage en deskundigenadvies</a></li>
+          <li><a class="mobile-panel--sublink" href="certificaat-funderingsherstel.html" data-panel-sluit>Certificaat funderingsherstel</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mobile-panel--nav-link mobile-panel--nav-knop"
+                data-mobiel-uitklap="projecten" aria-expanded="false"
+                aria-controls="mobiel-projecten" style="transition-delay:120ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Projecten</span><span>Projecten</span></span></span><svg class="submenu--chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9 7 7.6l5 5 5-5L18.4 9 12 15.4Z"/></svg></button>
+        <ul class="mobile-panel--sublijst" id="mobiel-projecten" role="list" hidden>
+          <li><a class="mobile-panel--sublink" href="projecten.html" data-panel-sluit>Alle projecten</a></li>
+          <li><a class="mobile-panel--sublink" href="projecten.html#funderingsherstel" data-panel-sluit>Funderingsherstel</a></li>
+          <li><a class="mobile-panel--sublink" href="projecten.html#nieuwbouw" data-panel-sluit>Nieuwbouw</a></li>
+          <li><a class="mobile-panel--sublink" href="projecten.html#verbouwing" data-panel-sluit>Verbouwing</a></li>
+        </ul>
+      </li>
+      <li><a class="mobile-panel--nav-link" href="offerte.html" data-panel-sluit style="transition-delay:180ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Offerte</span><span>Offerte</span></span></span></a></li>
+      <li><a class="mobile-panel--nav-link" href="over-ons.html" data-panel-sluit style="transition-delay:240ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Over ons</span><span>Over ons</span></span></span></a></li>
+      <li><a class="mobile-panel--nav-link" href="contact.html" data-panel-sluit style="transition-delay:300ms"><span class="mobile-panel--text-slide"><span class="mobile-panel--text-slide-inner"><span>Contact</span><span>Contact</span></span></span></a></li>
+    </ul>
+  </nav>
+  <div class="mobile-panel--cta button__mobile-width">
+    <a href="contact.html" class="button button--primary"><span class="button__inhoud">Bespreek uw project<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+  </div>
+</div>
+
+<div id="smooth-wrapper">
+<div id="smooth-content">
+
+<div data-barba="wrapper">
+<div class="app__wrapper" data-barba="container" data-barba-namespace="dienst">
+<div class="content__wrapper">
+
+<main id="main-content">
+
+  <section class="paginahero" id="s01-introductie">
+    <div class="paginahero__kop">
+      <span class="subtitle">Fundering</span>
+      <h1 class="paginahero__titel">Zelf&shy;dragende kelderbak</h1>
+    </div>
+    <div class="paginahero__beeld">
+      <picture><img src="assets/foto/duyts-dienst-zelfdragende-kelderbak-2048.webp" srcset="assets/foto/duyts-dienst-zelfdragende-kelderbak-640.webp 640w, assets/foto/duyts-dienst-zelfdragende-kelderbak-1200.webp 1200w, assets/foto/duyts-dienst-zelfdragende-kelderbak-1800.webp 1800w, assets/foto/duyts-dienst-zelfdragende-kelderbak-2048.webp 2048w" sizes="(max-width: 767px) 100vw, 50vw" width="2048" height="1536" alt="Kelderbak in aanbouw met vlechtwerk en stalen stempels" loading="eager" fetchpriority="high" decoding="async"></picture>
+    </div>
+  </section>
+
+  <section class="content-text-side-cta" id="s02-statement">
+    <div class="container">
+      <div class="content-text-side-cta--container">
+        <div class="row gx-0">
+          <div class="col-lg-8 col-12">
+            <div class="content-text-side-cta--body article-body">
+              <p>Verkeert de bestaande fundering nog in goede staat, dan kan er een kelder in het pand worden aangebracht zonder die fundering te vervangen. Een prefab kelderbak wordt in de fabriek gemaakt en als &eacute;&eacute;n stuk geplaatst: direct waterdicht, zonder naden en met minimale bouwtijd op locatie.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 statement__actie">
+            <a href="offerte.html" class="button button--primary"><span class="button__inhoud">Vraag een offerte aan<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block" id="s03-wanneer">
+    <div class="container">
+      <div class="content-block--container background--white" style="padding-bottom:var(--space-700)">
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <span class="subtitle" style="margin-bottom:var(--space-500)">Herkenbaar?</span>
+            <h2 class="section-heading">Ruimte bijmaken onder een goed pand</h2>
+            <p class="article-body" style="margin-top:var(--space-500); max-width:var(--content-max-half)">Funderingsproblemen kondigen zich vaak jaren vooraf aan. Deze drie aanleidingen zien we het meest.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-row panel-row--3">
+        <div>
+          <div class="panel panel--grey">
+            <span class="panel__meta">Situatie 01</span>
+            <h3 class="panel__title">De bestaande fundering is nog goed</h3>
+            <p class="panel__body">Dan kan er een kelder in het pand worden aangebracht zonder de fundering te vervangen.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--wit">
+            <span class="panel__meta">Situatie 02</span>
+            <h3 class="panel__title">U wilt snel klaar zijn</h3>
+            <p class="panel__body">Een prefab kelderbak wordt in de fabriek gemaakt en in &eacute;&eacute;n stuk geplaatst. De bouwtijd op locatie is minimaal.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--grey">
+            <span class="panel__meta">Situatie 03</span>
+            <h3 class="panel__title">Er is ruimte voor een kraan</h3>
+            <p class="panel__body">De bak gaat over de weg en wordt ingehesen. Dat stelt eisen aan de ruimte rondom de bouwplaats.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block" id="s04-uitleg">
+    <div class="container">
+      <div class="content-block--container background--white">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <span class="subtitle" style="margin-bottom:var(--space-500)">Hoe het werkt</span>
+            <h2 class="section-heading" style="margin-bottom:var(--space-500)">Wat een zelfdragende kelderbak is</h2>
+            <div class="article-body">
+              <p>Indien de bestaande fundering nog in goede staat verkeert kan een kelder in een pand worden aangebracht.</p>
+              <p>Een zelfdragende kelderbak is een prefab kelder die in zijn geheel uit beton wordt vervaardigd, getransporteerd en als &eacute;&eacute;n stuk word geplaatst, waardoor deze direct waterdicht is en geen aanvullende grondwerken voor versteviging nodig heeft. Het is een kant-en-klare, constructieve oplossing die extra ondergrondse ruimte biedt, snel te plaatsen is en waterdichtheid garandeert zonder naden.</p>
+              <p>Bij Duyts maken wij een berekening en tekening van de benodigde constructie-onderdelen.</p>
+              <p>De voordelen van een kelderbak op een rijtje:</p>
+              <p>Afhankelijk van de reservecapaciteit van de oorspronkelijke fundering, en de grondwaterstand zullen wellicht onder de kelderbak enkele funderingspalen aangebracht moeten worden. De kelderbak zal over de weg getransporteerd moeten worden en met een kraan op de juiste plek gehesen worden.</p>
+              <p>Dit stelt eisen aan de ruimte rondom de bouwplaats. Bovendien moet, in gebieden met een hoge grondwaterstand, de kelder berekend zijn op de opwaartse druk (het &lsquo;drijven&rsquo; van de kelder) en moet er vaak voldoende bronnering (droogmaling van de grond) plaatsvinden tijdens de plaatsing.</p>
+              <p>Fabrikanten leveren zowel standaardmaten als maatwerk. Vanwege het transport over de weg gelden er vaak maximale afmetingen van ongeveer 6 meter breed en 15 meter lang. Standaard worden deze bakken geleverd met wanddiktes tussen de 12 en 16 cm en voorzien van sparingen voor ventilatie en eventueel een trapgat.</p>
+            </div>
+            <div class="article-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-row panel-row--3">
+        <div>
+          <div class="panel panel--grey">
+            <h3 class="panel__title">Tijdbesparing</h3>
+            <p class="panel__body">Omdat de bak kant-en-klaar is, is de bouwtijd op de locatie minimaal.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--wit">
+            <h3 class="panel__title">Waterdicht</h3>
+            <p class="panel__body">Door het gebruik van hoogwaardig beton in gecontroleerde fabrieksomstandigheden is de bak gegarandeerd waterdicht.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--grey">
+            <h3 class="panel__title">Bekisting</h3>
+            <p class="panel__body">Er is geen zware bekisting nodig. De kelder is direct bestand tegen grond- en waterdruk</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band background--grey" id="s05-aanpak">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <span class="subtitle" style="margin-bottom:var(--space-500)">Aanpak</span>
+          <h2 class="section-heading">Onderzoek in fasen</h2>
+          <p class="article-body" style="margin-top:var(--space-500)">Onderzoek gaat stap voor stap: elke fase levert informatie op waarmee u kunt besluiten of de volgende fase nodig is.</p>
+          <div style="margin-top:var(--space-600)">
+            <a href="werkwijze.html" class="button button--secundair"><span class="button__inhoud">Onze werkwijze<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <ol class="trap" role="list">
+        <li class="trede" style="--trede:0">
+          <span class="trede__nummer">01</span>
+          <div class="trede__inhoud">
+            <h3 class="trede__titel">Vooronderzoek en archief</h3>
+            <p class="trede__tekst">Eerst kijken we wat er bekend is: bouwjaar, oorspronkelijke funderingswijze, eerdere ingrepen en wat de omgeving doet. Vaak verklaart dat al de helft van het schadebeeld.</p>
+            <p class="trede__gedrag"><span>Goed om te weten</span> Volgens de fasering van de KCAF-richtlijn Funderingen onder gebouwen.</p>
+          </div>
+        </li>
+        <li class="trede" style="--trede:1">
+          <span class="trede__nummer">02</span>
+          <div class="trede__inhoud">
+            <h3 class="trede__titel">Inspectie en metingen</h3>
+            <p class="trede__tekst">We nemen het pand op: scheurvorming, vloervervormingen, scheefstand en hoogtemetingen. Zo weten we of het pand nog beweegt of dat het tot rust is gekomen.</p>
+            <p class="trede__gedrag"><span>Goed om te weten</span> Een pand dat stilstaat vraagt een andere aanpak dan een pand dat zakt.</p>
+          </div>
+        </li>
+        <li class="trede" style="--trede:2">
+          <span class="trede__nummer">03</span>
+          <div class="trede__inhoud">
+            <h3 class="trede__titel">Inspectieput en houtonderzoek</h3>
+            <p class="trede__tekst">Om de fundering echt te beoordelen moet je hem zien. We graven een inspectieput, nemen de opbouw op en kunnen monsters van de houten palen laten onderzoeken op aantasting door bacteri&euml;n of schimmels.</p>
+            <p class="trede__gedrag"><span>Goed om te weten</span> Laboratoriumonderzoek via de Stichting Hout Research.</p>
+          </div>
+        </li>
+        <li class="trede" style="--trede:3">
+          <span class="trede__nummer">04</span>
+          <div class="trede__inhoud">
+            <h3 class="trede__titel">Beoordeling en handelingsperspectief</h3>
+            <p class="trede__tekst">U krijgt een rapport met de kwaliteit van de fundering, de resterende onderhoudsvrije termijn en wat dat betekent: niets doen, monitoren, of herstellen. Met bij herstel de varianten die in uw situatie kunnen.</p>
+            <p class="trede__gedrag"><span>Goed om te weten</span> Inclusief het funderingslabel waar de gemeente of een splitsing om vraagt.</p>
+          </div>
+        </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block" id="s06-oplevering">
+    <div class="container">
+      <div class="content-block--container background--white" style="padding-bottom:var(--space-700)">
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <span class="subtitle" style="margin-bottom:var(--space-500)">Oplevering</span>
+            <h2 class="section-heading">Wat u van ons krijgt</h2>
+          </div>
+        </div>
+      </div>
+      <div class="panel-row panel-row--4">
+        <div>
+          <div class="panel panel--grey">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v14H6V2Zm2 2v16h10V9h-5V4H8Zm7 .4V7h2.6L15 4.4ZM9 12h8v2H9v-2Zm0 4h8v2H9v-2Z"/></svg>
+            <h3 class="voordeel__titel">Onderzoeksrapport</h3>
+            <p class="panel__body">De opbouw en de staat van de bestaande fundering, met de metingen en de uitkomsten van het houtonderzoek.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--wit">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V3h2v16h16v2H3Zm4-4V9h3v8H7Zm5 0V5h3v12h-3Zm5 0v-6h3v6h-3Z"/></svg>
+            <h3 class="voordeel__titel">Funderingslabel en termijn</h3>
+            <p class="panel__body">De kwaliteitsklasse en de onderhoudsvrije termijn: de informatie waar een gemeente of een splitsing om vraagt.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--grey">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h4v4H3V5Zm6 1h12v2H9V6ZM3 10h4v4H3v-4Zm6 1h12v2H9v-2ZM3 15h4v4H3v-4Zm6 1h12v2H9v-2Z"/></svg>
+            <h3 class="voordeel__titel">Handelingsperspectief</h3>
+            <p class="panel__body">Niets doen, monitoren of herstellen, en bij herstel de varianten die op deze plek uitvoerbaar zijn.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--wit">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21v-4h5v-4h5V9h5V5h3v18H3Zm2-2h14V7h-1v4h-5v4H8v4H5v0Z"/></svg>
+            <h3 class="voordeel__titel">Herstelplan als het nodig is</h3>
+            <p class="panel__body">Berekening en tekening van het funderingsherstel, waarmee de aannemer het werk kan uitvoeren.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block" id="s07-voordelen">
+    <div class="container">
+      <div class="content-block--container background--white" style="padding-bottom:var(--space-700)">
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <span class="subtitle" style="margin-bottom:var(--space-500)">Waarom Duyts</span>
+            <h2 class="section-heading">Wat u eraan heeft</h2>
+          </div>
+        </div>
+      </div>
+      <div class="panel-row panel-row--4">
+        <div>
+          <div class="panel panel--grey">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h4v4H3V5Zm6 1h12v2H9V6ZM3 10h4v4H3v-4Zm6 1h12v2H9v-2ZM3 15h4v4H3v-4Zm6 1h12v2H9v-2Z"/></svg>
+            <h3 class="voordeel__titel">Eerst weten, dan beslissen</h3>
+            <p class="panel__body">Funderingsherstel is ingrijpend en kostbaar. Onderzoek vooraf voorkomt dat u meer doet dan nodig, of te laat bent.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--wit">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6.5c0 4.6 3.2 8.4 8 10.5 4.8-2.1 8-5.9 8-10.5V5l-8-3Zm0 2.2 6 2.2v5.1c0 3.5-2.3 6.5-6 8.3-3.7-1.8-6-4.8-6-8.3V6.4l6-2.2Z"/></svg>
+            <h3 class="voordeel__titel">Amsterdamse bodem en bouwwijze</h3>
+            <p class="panel__body">We kennen de stad, haar ondergrond en haar panden, en de problemen die daarbij horen.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--grey">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V3h2v16h16v2H3Zm4-4V9h3v8H7Zm5 0V5h3v12h-3Zm5 0v-6h3v6h-3Z"/></svg>
+            <h3 class="voordeel__titel">Waarde en verkoopbaarheid</h3>
+            <p class="panel__body">Een beoordeelde, solide fundering is harde informatie bij verkoop, splitsing of een financieringsaanvraag.</p>
+          </div>
+        </div>
+        <div>
+          <div class="panel panel--wit">
+            <svg class="voordeel__icoon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-6a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm7 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM2 21v-2c0-2.8 3.1-4 7-4s7 1.2 7 4v2H2Zm2-2h10c0-1.2-1.9-2-5-2s-5 .8-5 2Zm14 2v-2c0-1.2-.4-2.2-1.1-3 3 .3 5.1 1.5 5.1 3v2h-4Z"/></svg>
+            <h3 class="voordeel__titel">Onafhankelijk van de uitvoerder</h3>
+            <p class="panel__body">Wij voeren geen herstel uit. Ons advies is dus niet gekleurd door wat wij zelf zouden willen bouwen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band background--white" id="s08-faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <span class="subtitle">FAQ</span>
+          <h2 class="font-size--lg" style="margin-top:var(--space-500)">Wat mensen meestal nog vragen</h2>
+        </div>
+        <div class="col-md-8 col-12">
+          <div class="accordion">
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" aria-controls="faq-08-0">
+              <span class="accordion__number">01</span>
+              <span class="accordion__title">Is er een vergunning nodig voor het plaatsen van een kelderbak?</span>
+              <span class="accordion__suffix" aria-hidden="true"><span class="accordion__icon"></span></span>
+            </button>
+            <div class="accordion__details" id="faq-08-0">
+              <div class="accordion__details-inner article-body"><p>Voor het plaatsen van een prefab kelder (onder een woning of in de tuin) is in vrijwel altijd een omgevingsvergunning van de gemeente vereist.</p></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" aria-controls="faq-08-1">
+              <span class="accordion__number">02</span>
+              <span class="accordion__title">Moet mijn pand op de schop voor onderzoek?</span>
+              <span class="accordion__suffix" aria-hidden="true"><span class="accordion__icon"></span></span>
+            </button>
+            <div class="accordion__details" id="faq-08-1">
+              <div class="accordion__details-inner article-body"><p>Nee. Voor de beoordeling graven we een inspectieput, meestal aan de binnenzijde bij een bouwmuur. Dat is lokaal werk; het pand blijft in gebruik. De put wordt na het onderzoek weer dichtgemaakt.</p></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" aria-controls="faq-08-2">
+              <span class="accordion__number">03</span>
+              <span class="accordion__title">Ik wil mijn pand splitsen in appartementsrechten. Wat is er nodig?</span>
+              <span class="accordion__suffix" aria-hidden="true"><span class="accordion__icon"></span></span>
+            </button>
+            <div class="accordion__details" id="faq-08-2">
+              <div class="accordion__details-inner article-body"><p>Bij splitsing moet u aantonen dat de fundering nog minimaal 25 jaar onderhoudsvrij is, kwaliteitsklasse code 2. Daarvoor is een funderingsonderzoek veelal vereist. Wij voeren dit soort onderzoeken regelmatig uit, juist voor die reden.</p></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" aria-controls="faq-08-3">
+              <span class="accordion__number">04</span>
+              <span class="accordion__title">Werkt u samen met mijn architect en aannemer?</span>
+              <span class="accordion__suffix" aria-hidden="true"><span class="accordion__icon"></span></span>
+            </button>
+            <div class="accordion__details" id="faq-08-3">
+              <div class="accordion__details-inner article-body"><p>Ja, en het liefst vanaf het begin. We werken nauw samen met opdrachtgevers, architecten, aannemers en andere adviseurs, en kijken verder dan de vraag op papier.</p></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" aria-controls="faq-08-4">
+              <span class="accordion__number">05</span>
+              <span class="accordion__title">Hoe snel kunnen jullie starten?</span>
+              <span class="accordion__suffix" aria-hidden="true"><span class="accordion__icon"></span></span>
+            </button>
+            <div class="accordion__details" id="faq-08-4">
+              <div class="accordion__details-inner article-body"><p>Dat verschilt per periode en per opdracht. In de offerte vermelden wij binnen welke termijn wij kunnen starten, welke werkzaamheden wij hebben ingeschat en welke aanvullende gegevens er nog nodig zijn.</p></div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" aria-controls="faq-08-5">
+              <span class="accordion__number">06</span>
+              <span class="accordion__title">Op welke voorwaarden werken jullie?</span>
+              <span class="accordion__suffix" aria-hidden="true"><span class="accordion__icon"></span></span>
+            </button>
+            <div class="accordion__details" id="faq-08-5">
+              <div class="accordion__details-inner article-body"><p>Voor al onze opdrachten hanteren wij de DNR 2011, die we standaard meesturen met de offerte. Die regeling beschrijft de rechtsverhouding tussen opdrachtgever, architect, ingenieur en adviseur. Voor al onze advieswerkzaamheden hebben wij een beroepsaansprakelijkheidsverzekering afgesloten.</p></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logo-slider" id="s09-opdrachtgevers" aria-label="Voor wie wij werken" data-logoband>
+    <div class="logo-slider__venster">
+      <div class="logo-slider__spoor">
+        <ul class="logo-slider__set">
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="Alstom" width="408" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="Ballast Nedam" width="452" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="Bilfinger" width="210" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="Cosun Beet Company" width="345" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="Ebert Hera" width="389" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="Electrabel" width="203" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="Freesmij" width="309" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="GE Vernova" width="362" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="Huhtamaki" width="478" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="Ivens" width="237" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="Ooms Bouw &amp; Ontwikkeling" width="248" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="Stork" width="197" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="TES Industrial Systems" width="160" height="80" decoding="async"></li>
+        </ul>
+        <ul class="logo-slider__set" aria-hidden="true">
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/alstom.webp" alt="" width="408" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ballast-nedam.webp" alt="" width="452" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/bilfinger.webp" alt="" width="210" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/cosun.webp" alt="" width="345" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ebert-hera.webp" alt="" width="389" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/electrabel.webp" alt="" width="203" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/freesmij.webp" alt="" width="309" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ge-vernova.webp" alt="" width="362" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/huhtamaki.webp" alt="" width="478" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ivens.webp" alt="" width="237" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/ooms.webp" alt="" width="248" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/stork.webp" alt="" width="197" height="80" decoding="async"></li>
+          <li class="logo-slider__logo"><img src="assets/logo/opdrachtgevers/tes.webp" alt="" width="160" height="80" decoding="async"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-slot" id="s10-contact">
+    <div class="container">
+      <div class="cta-slot__hoofd">
+        <span class="subtitle cta-slot__label">Contact</span>
+        <h2 class="cta-slot__kop">Overleggen over uw project?</h2>
+        <p class="cta-slot__tekst">Vertel kort wat er verbouwd, hersteld of gebouwd wordt. Wij nemen zo spoedig mogelijk contact met u op.</p>
+        <div class="cta-slot__actie">
+          <a href="offerte.html" class="button button--primary"><span class="button__inhoud">Vraag een offerte aan<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+          <a href="contact.html" class="button button--secondary"><span class="button__inhoud">Bespreek uw project<span class="button__spoor" aria-hidden="true"><svg class="arrow--animation is-1" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg><svg class="arrow--animation is-2" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 4.6 20.6 12l-7.4 7.4-1.4-1.4 5-5H3.4v-2h13.4l-5-5 1.4-1.4Z"/></svg></span></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer--widgets">
+      <div class="row footer--gap">
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <img src="assets/logo/duyts-logo.png" alt="Duyts Bouwconstructies" width="112" height="40" style="margin-bottom:var(--space-500)">
+          <p class="footer--intro">Constructieve adviezen voor verbouwing, funderingsherstel en nieuwbouw. Sinds 1981 vanuit Amsterdam, door het hele land.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <h4>Werkzaamheden</h4>
+          <ul role="list">
+            <li><a href="verbouwing.html">Verbouwing</a></li>
+            <li><a href="fundering.html">Fundering</a></li>
+            <li><a href="nieuwbouw.html">Nieuwbouw</a></li>
+            <li><a href="constructieberekening.html">Constructieberekening</a></li>
+            <li><a href="stabiliteitsberekening.html">Stabiliteitsberekening</a></li>
+            <li><a href="schaderapportage.html">Schaderapportage en deskundigenadvies</a></li>
+            <li><a href="certificaat-funderingsherstel.html">Certificaat funderingsherstel</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <h4>Projecten</h4>
+          <ul role="list">
+            <li><a href="projecten.html#funderingsherstel">Funderingsherstel</a></li>
+            <li><a href="projecten.html#nieuwbouw">Nieuwbouw</a></li>
+            <li><a href="projecten.html#verbouwing">Verbouwing</a></li>
+            <li><a href="werkwijze.html">Werkwijze</a></li>
+            <li><a href="vacatures.html">Vacatures</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 widget">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li><a href="tel:+31206847475">020-6847475</a></li>
+            <li><a href="mailto:info@duyts.nl">info@duyts.nl</a></li>
+          </ul>
+          <p class="footer--adres">Van Slingelandtstraat 28<br>1051 CH Amsterdam<br>KvK 33228370</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer--line"></div>
+    <div class="footer--copyright">
+      <span>&copy; Duyts Bouwconstructies B.V.</span>
+      <a href="privacybeleid.html">Privacybeleid</a>
+      <a href="cookies.html">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js?v=f105a2ab"></script>
+<script src="contactformulier.js?v=2634c28d"></script>
+
+</div><!-- /.content__wrapper -->
+</div><!-- /[data-barba=container] -->
+</div><!-- /[data-barba=wrapper] -->
+
+</div><!-- /#smooth-content -->
+</div><!-- /#smooth-wrapper -->
+
+<!-- ================= COOKIEMELDING ================= -->
+<aside id="cookiebalk" class="cookiebalk" hidden aria-label="Cookiemelding">
+  <h2>Cookie-instellingen</h2>
+  <p>Deze site plaatst alleen wat nodig is om hem te laten werken. Zet je analytische cookies aan, dan help je ons te zien wat werkt en wat niet. Lees het <a href="cookies.html">cookiebeleid</a>.</p>
+
+  <div id="cookieKeuzes" class="cookie-keuzes" hidden>
+    <div class="cookie-optie">
+      <label class="cookie-schakelaar">
+        <input type="checkbox" checked disabled aria-label="Functionele cookies, altijd aan">
+        <span aria-hidden="true"></span>
+      </label>
+      <div>
+        <span class="cookie-optie-naam">Functioneel</span>
+        <p>Nodig om de site te laten werken. Staat altijd aan.</p>
+      </div>
+    </div>
+    <div class="cookie-optie">
+      <label class="cookie-schakelaar">
+        <input type="checkbox" id="cookieAnalytisch" aria-label="Analytische cookies">
+        <span aria-hidden="true"></span>
+      </label>
+      <div>
+        <span class="cookie-optie-naam">Analytisch</span>
+        <p>Laat ons zien welke pagina&rsquo;s bezocht worden, zodat we de site kunnen verbeteren.</p>
+      </div>
+    </div>
+    <div class="cookie-optie">
+      <label class="cookie-schakelaar">
+        <input type="checkbox" id="cookieMarketing" aria-label="Marketingcookies">
+        <span aria-hidden="true"></span>
+      </label>
+      <div>
+        <span class="cookie-optie-naam">Marketing</span>
+        <p>Voor advertenties en het meten daarvan. Nu niet in gebruik.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cookie-knoppen">
+    <button type="button" class="cookie-knop" data-cookie="weigeren">Weigeren</button>
+    <button type="button" class="cookie-knop" data-cookie="aanpassen">Aanpassen</button>
+    <button type="button" class="cookie-knop cookie-knop--donker" data-cookie="toestaan">Toestaan</button>
+  </div>
+</aside>
+
+<!-- ================= PAGINA-OVERGANGEN =================
+     Barba wisselt alleen de container hierboven om, GSAP animeert de wissel. -->
+<!-- defer: de browser haalt ze op terwijl hij de pagina nog aan het ontleden is
+     en voert ze daarna uit, in deze volgorde. Die volgorde is nodig, want
+     ScrollTrigger heeft gsap nodig en page-transitions.js heeft Barba nodig. -->
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js"></script>
+<script defer src="cookiebalk.js?v=76872ba6"></script>
+<script defer src="analytics.js?v=47e6b63a"></script>
+<script defer src="smooth-scroll.js?v=6b5f0d26"></script>
+<script defer src="page-transitions.js?v=9fe9bce8"></script>
+
+</body>
+</html>

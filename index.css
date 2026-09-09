@@ -1,0 +1,102 @@
+/* ============================================================================
+   index.css: alleen wat op de homepage staat
+   Het systeem zelf staat in styleguide.css.
+   ========================================================================== */
+
+/* ---- Hero (§6.7) --------------------------------------------------------
+   Beeld over de volle breedte met de inhoud linksonder, zoals in de gids.
+   Onderop een foto, daarover een film die pas in beeld komt als hij speelt.
+   TODO-CONTENT: eigen dronebeeld van een opdrachtgever in plaats van deze
+   stockfilm. */
+.hero--beeld { position: absolute; inset: 0; overflow: hidden; }
+.hero--beeld img,
+.hero--video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* De film staat op nul en vervaagt erin zodra hij loopt. Weigert de browser het
+   automatisch afspelen, dan blijft dit op nul staan en zie je de foto; dat is
+   het eerste beeldje van dezelfde film, dus je mist niets. */
+.hero--video { opacity: 0; transition: opacity var(--duration-image) var(--ease-standard); }
+.hero--video.is-zichtbaar { opacity: 1; }
+
+/* Geen kleur meer over de film: de groene gradient is eruit, de film houdt zijn
+   eigen kleuren. Wat blijft is een donkere aanloop naar onderen. Dat is geen
+   filter maar het temmen van het beeld waar de tekst staat, en zonder is het
+   onbruikbaar: er zit een fel verlichte loods in de film en op die beeldjes
+   staat de kop op 1,00:1. Wit op wit, de kop is dan letterlijk weg.
+
+   Gemeten over 30 beeldjes verdeeld over de hele film, op de lichtste vijf
+   procent van elk tekstvak: kop 4,37:1, introtekst 5,83:1, knoppen 7,32:1,
+   tegen een eis van 3:1 en 4,5:1. 30% is de lichtste stand waarop dat lukt.
+
+   Wil je ook deze laag weg, dan is het één regel; zie CONTENT-TODO.md voor wat
+   dat kost. */
+.hero--sluier {
+  position: absolute; inset: 0;
+  /* Drie stops in plaats van twee. De film is een echte opname, dus er zitten
+     lichte frames tussen: een witte lucht en een overbelichte gevel. Gemeten
+     over zeven frames haalde de witte navigatie boven in de hero met de oude
+     twee-stops-sluier 2,34:1, en dat moet 4,5:1 zijn voor tekst van 14px.
+
+     De sluier is daarom donkerder waar tekst staat en juist iets lichter in het
+     midden, waar niets staat en de foto mag ademen. Gemeten over dezelfde zeven
+     frames, op de slechtste pixel per tekstvlak:
+       navigatie (14px, eis 4,5)  5,4:1
+       label     (11px, eis 4,5)  5,2:1
+       titel     (72px, eis 3,0)  4,1:1
+       intro     (18px, eis 4,5)  6,0:1 */
+  background: linear-gradient(rgba(0, 0, 0, .68) 0%,
+                              rgba(0, 0, 0, .36) 22%,
+                              rgba(0, 0, 0, .70) 100%);
+}
+/* De hero vult het scherm. min-height en niet height, zodat hij meegroeit als de
+   tekst niet past; op een kleine telefoon in liggende stand is 100vh nog geen
+   400px en dan moet de inhoud eruit kunnen lopen in plaats van afgesneden te
+   worden.
+
+   svh en niet vh: op een telefoon rekent vh met de balken van de browser
+   weggeklapt, en dan steekt de hero er bij het openen onderuit. De vh-regel
+   staat er als terugval voor browsers die svh niet kennen. */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--color-groen);
+  display: flex;
+}
+
+.hero--container {
+  position: relative; width: 100%; max-width: var(--container-max); margin-inline: auto;
+  display: flex; align-items: flex-end;
+  padding: 160px var(--inset-x) var(--space-650);
+}
+@media (max-width: 576px) { .hero--container { padding: 120px var(--inset-x) var(--space-650); } }
+
+.hero--content { width: 100%; max-width: 900px; }
+.hero--title { margin: var(--space-500) 0; color: var(--color-white); font-size: clamp(24px, 6vw, 72px); }
+@media (max-width: 576px) { .hero--title { font-size: 36px; } }
+.hero--intro { color: var(--color-white); max-width: var(--content-max-half); }
+.hero--intro p + p { margin-top: 1.6em; }
+.hero--actions { margin-top: var(--space-700); display: flex; flex-wrap: wrap; gap: var(--space-300); }
+
+/* ---- USP's --------------------------------------------------------------- */
+.usp__getal { font-family: var(--font-light); font-weight: var(--weight-light);
+              font-size: clamp(3rem, 2rem + 4vw, 5rem); line-height: 1; margin: 0; }
+.usp__label { font-family: var(--font-medium); font-weight: var(--weight-medium);
+              font-size: 0.6875rem; letter-spacing: var(--tracking-label);
+              text-transform: uppercase; margin: 0; }
+
+/* ---- Projecten ---------------------------------------------------------- */
+.projectkaart__klant {
+  font-family: var(--font-medium); font-weight: var(--weight-medium);
+  font-size: 0.6875rem; letter-spacing: var(--tracking-label); text-transform: uppercase;
+  margin: 0;
+}
+
+
+/* ---- 03 Tekst met uitlopend beeld --------------------------------------
+   De opzet uit §6.10: tekstkolom links, beeld rechts dat op desktop voorbij
+   de rand loopt. Onder 991px komt het beeld gewoon onder de tekst.
+   De kop hier is een h2 in plaats van de h3 uit de gids, want dit is de
+   eerste sectiekop van de pagina na de h1 in de hero. */
+.content-text-side-visual { background-color: var(--color-white); }
+/* De rest van dit component staat in styleguide.css; de cursuspagina's
+   gebruiken het ook. */

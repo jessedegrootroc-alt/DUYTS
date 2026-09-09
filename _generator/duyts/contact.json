@@ -1,0 +1,219 @@
+{
+  "sourceUrl": "https://www.duyts.nl/contact/",
+  "h1": "Contact",
+  "metaTitle": "DUYTS BOUWCONSTRUCTIES BV - neem contact op",
+  "metaDescription": "Meer weten over hoe we u kunnen helpen met constructieberekeningen en/of funderingsonderzoek en herstel. Neem contact op...",
+  "intro": "Heeft u al informatie over een specifiek project?",
+  "sections": [
+    {
+      "heading": "Neem contact op",
+      "headingLevel": "h3",
+      "paragraphs": [],
+      "lists": [],
+      "images": [],
+      "links": []
+    },
+    {
+      "heading": "DUYTS BOUWCONSTRUCTIES BV",
+      "headingLevel": "strong",
+      "paragraphs": [
+        "Heeft u al informatie over een specifiek project?",
+        "Vraag dan een offerte aan.",
+        "Onderwerp* T.a.v. (optioneel) Uw bericht* Uw naam* Uw e-mailadres* Uw telefoonnummer* Indien u met ons een overeenkomst sluit voor bijvoorbeeld een bouwproject, een adviestraject of informatie bij ons aanvraagt, verwerken wij uw persoonsgegevens voor de uitvoering van de overeenkomst. Daarnaast verwerken wij bepaalde gegevens van u omdat wij daartoe volgens de AVG wettelijk verplicht zijn."
+      ],
+      "lists": [],
+      "images": [],
+      "links": [
+        {
+          "text": "Vraag dan een offerte aan.",
+          "href": "https://www.duyts.nl/offerte/"
+        }
+      ]
+    }
+  ],
+  "companyName": "Duyts Bouwconstructies BV",
+  "address": {
+    "street": "Van Slingelandtstraat 28",
+    "postalCodeCity": "1051 CH Amsterdam",
+    "raw": "Duyts Bouwconstructies BV\nVan Slingelandtstraat 28\n1051 CH Amsterdam",
+    "country": "[CONTENT NIET GEVONDEN]"
+  },
+  "phone": "020-6847475",
+  "email": "info@duyts.nl",
+  "kvk": "33228370",
+  "openingHours": "[CONTENT NIET GEVONDEN]",
+  "routeDescription": "[CONTENT NIET GEVONDEN]",
+  "mapEmbed": "[CONTENT NIET GEVONDEN]",
+  "contactForm": {
+    "sourceUrl": "https://www.duyts.nl/contact/",
+    "labels": [
+      "Onderwerp*",
+      "T.a.v. (optioneel)",
+      "Uw bericht*",
+      "Uw naam*",
+      "Uw e-mailadres*",
+      "Uw telefoonnummer*"
+    ],
+    "fields": [
+      {
+        "name": "your-subject",
+        "type": "text",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "name": "your-tav",
+        "type": "text",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "your-message",
+        "type": "textarea",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "name": "your-name",
+        "type": "text",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "name": "your-email",
+        "type": "email",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "name": "your-phone",
+        "type": "tel",
+        "placeholder": "",
+        "required": true
+      }
+    ],
+    "submitButton": "Verzenden",
+    "privacyText": "Indien u met ons een overeenkomst sluit voor bijvoorbeeld een bouwproject, een adviestraject of informatie bij ons aanvraagt, verwerken wij uw persoonsgegevens voor de uitvoering van de overeenkomst. Daarnaast verwerken wij bepaalde gegevens van u omdat wij daartoe volgens de AVG wettelijk verplicht zijn."
+  },
+  "quoteForm": {
+    "sourceUrl": "https://www.duyts.nl/offerte/",
+    "h1": "Offerte",
+    "intro": "Via onderstaand formulier kunt u vrijblijvend een offerte aanvragen. Uiteraard kunt u ook direct met ons bellen als dat uw voorkeur heeft: 020-6847475 Om ervoor te zorgen dat wij de offerte zo goed mogelijk op uw situatie af kunnen stemmen, verzoeken wij u bij uw aanvraag ons een uitgebreide opdrachtomschrijving te geven en ons zoveel mogelijk beschikbare informatie toe te sturen.",
+    "labels": [
+      "Uw naam *",
+      "Organisatie",
+      "Uw e-mailadres *",
+      "Uw telefoonnummer",
+      "Vraag of opdrachtomschrijving *",
+      "Projectadres (indien van toepassing)",
+      "Bestand",
+      "Validatie"
+    ],
+    "fields": [
+      {
+        "name": "input_10",
+        "type": "text",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "name": "input_13",
+        "type": "text",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "input_11",
+        "type": "email",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "name": "input_12",
+        "type": "tel",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "input_1",
+        "type": "textarea",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "name": "input_14",
+        "type": "textarea",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "input_2",
+        "type": "file",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "input_3",
+        "type": "file",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "input_8",
+        "type": "file",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "input_9",
+        "type": "file",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "name": "input_16",
+        "type": "file",
+        "placeholder": "",
+        "required": false
+      }
+    ],
+    "submitButton": "Verzenden",
+    "sections": [
+      {
+        "heading": "Offerte aanvragen",
+        "headingLevel": "h3",
+        "paragraphs": [
+          "Via onderstaand formulier kunt u vrijblijvend een offerte aanvragen. Uiteraard kunt u ook direct met ons bellen als dat uw voorkeur heeft: 020-6847475 Om ervoor te zorgen dat wij de offerte zo goed mogelijk op uw situatie af kunnen stemmen, verzoeken wij u bij uw aanvraag ons een uitgebreide opdrachtomschrijving te geven en ons zoveel mogelijk beschikbare informatie toe te sturen.",
+          "Indien u bestanden wilt uploaden mogen deze gezamenlijk niet groter zijn dan 20MB. Anders gelieve graag de bestanden per mail (of via www.wetransfer.com of sharefile.com) te sturen aan info@duyts.nl.",
+          "Na ontvangst hiervan brengen wij zo spoedig mogelijk de offerte uit, of nemen eerst nog contact met u op voor de aanvullende informatie.",
+          "\" * \" geeft vereiste velden aan Uw naam * Organisatie Uw e-mailadres * Uw telefoonnummer Vraag of opdrachtomschrijving * Projectadres (indien van toepassing) De gezamenlijke grootte van onderstaande bestanden mag niet meer zijn dan 20MB Bestand Max. bestandsgrootte: 20 MB.",
+          "Bestand Max. bestandsgrootte: 20 MB.",
+          "Bestand Max. bestandsgrootte: 20 MB.",
+          "Bestand Max. bestandsgrootte: 20 MB.",
+          "Bestand Max. bestandsgrootte: 20 MB.",
+          "Validatie Verzenden Onze werkwijze vind u hier.",
+          "Indien u met ons een overeenkomst sluit voor bijvoorbeeld een bouwproject, een adviestraject of informatie bij ons aanvraagt, verwerken wij uw persoonsgegevens voor de uitvoering van de overeenkomst. Daarnaast verwerken wij bepaalde gegevens van u omdat wij daartoe volgens de AVG wettelijk verplicht zijn."
+        ],
+        "lists": [],
+        "images": [],
+        "links": [
+          {
+            "text": "hier",
+            "href": "https://www.duyts.nl/werkwijze/"
+          }
+        ]
+      }
+    ],
+    "privacyText": "Indien u met ons een overeenkomst sluit voor bijvoorbeeld een bouwproject, een adviestraject of informatie bij ons aanvraagt, verwerken wij uw persoonsgegevens voor de uitvoering van de overeenkomst. Daarnaast verwerken wij bepaalde gegevens van u omdat wij daartoe volgens de AVG wettelijk verplicht zijn.",
+    "fileUploadNote": "Indien u bestanden wilt uploaden mogen deze gezamenlijk niet groter zijn dan 20MB. Anders gelieve graag de bestanden per mail (of via www.wetransfer.com of sharefile.com) te sturen aan info@duyts.nl."
+  },
+  "images": [
+    {
+      "src": "/images/pages/contact-01.jpg",
+      "sourceUrl": "https://www.duyts.nl/wp-content/uploads/2024/10/HomeKopjes-b.jpg",
+      "role": "hero",
+      "alt": "[CONTENT NIET GEVONDEN]",
+      "title": ""
+    }
+  ]
+}

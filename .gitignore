@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# De contentexport van www.duyts.nl. Dit is een leveringsbestand van 34 MB dat
+# opnieuw gemaakt kan worden en dat bij elke wijziging van brand-style.md
+# opnieuw wordt weggeschreven. Git bewaart elke versie apart, dus committen
+# betekent 34 MB per keer. Wil je hem wel in de repo, haal deze regel dan weg.
+duyts-website-export.zip
+
+# Tijdelijke testbestanden van het bouwproces (staan er nu niet, maar de
+# namen zijn in gebruik geweest voor cache-omzeiling tijdens het meten).
+_site-test.js
+_test-quotes.html
+_audit.js
+_knopcheck.js
+_kaart.js
+_pijl.js
+_kc.js
+_st2.js
+_t2.html
