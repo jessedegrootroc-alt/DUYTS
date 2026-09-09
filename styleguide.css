@@ -1214,7 +1214,16 @@ main > section:has(+ section) > .container > .content-text-side-cta--container {
   margin: var(--space-500) 0 0; max-width: 46ch;
   color: var(--color-white);
 }
-.cta-slot__actie { margin-top: var(--space-700); }
+/* De twee knoppen stonden hier als inline-block naast elkaar, zonder eigen
+   ruimte ertussen: naast elkaar hielden ze alleen het witruimte-teken uit de
+   HTML over, en zodra ze afbraken raakten ze elkaar helemaal. Zelfde oplossing
+   als bij .hero--actions: een flexrij die mag afbreken, met een gap. Hij staat
+   gecentreerd, want dat doet het hele blok. */
+.cta-slot__actie {
+  margin-top: var(--space-700);
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: var(--space-300);
+}
 @media (max-width: 767px) {
   .cta-slot__hoofd { padding: var(--space-800) var(--inset-x); }
 }
